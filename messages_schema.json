@@ -26,8 +26,12 @@
               "description": "The human-readable title of this incident",
               "type": "string"
             },
-            "url": {
+            "self_url": {
               "description": "The canonical URL for this incident",
+              "type": "string"
+            },
+            "html_url": {
+              "description": "The URL for a human to view this incident",
               "type": "string"
             },
             "number": {
