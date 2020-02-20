@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ajv": "^6.11.0"
+  },
+  "devDependencies": {
+    "ajv-cli": "^3.0.0"
+  }
+}
