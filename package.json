@@ -1,4 +1,7 @@
 {
+  "name": "codeclimate-collector-sdk",
+  "version": "0.0.1",
+  "description": "SDK for developing collectors for the Code Climate Platform",
   "dependencies": {
     "ajv": "^6.11.0"
   },
