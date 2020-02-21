@@ -13,7 +13,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["Incident"]
+          "const": "Incident"
         },
         "attributes": {
           "type": "object",
