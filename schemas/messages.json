@@ -28,11 +28,13 @@
             },
             "self_url": {
               "description": "The canonical URL for this incident",
-              "type": "string"
+              "type": "string",
+              "format": "uri"
             },
             "html_url": {
               "description": "The URL for a human to view this incident",
-              "type": "string"
+              "type": "string",
+              "format": "uri"
             },
             "number": {
               "description": "The number identifying this incident",
@@ -49,7 +51,7 @@
             }
           },
           "required": [
-            "id", "title", "url", "number", "status", "created_at"
+            "id", "title", "html_url", "number", "status", "created_at"
           ]
         },
         "required":  ["type", "attributes"]
