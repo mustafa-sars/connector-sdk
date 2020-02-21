@@ -1,3 +1,4 @@
+import "jest"
 import { MessageValidator } from "../MessageValidator"
 
 describe("MessageValidator", () => {
