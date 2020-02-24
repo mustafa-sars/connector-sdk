@@ -1,7 +1,6 @@
-import "jest"
 import { MessageValidator } from "../MessageValidator"
 
-describe("MessageValidator", () => {
+describe(MessageValidator, () => {
   describe("incident messages", () => {
     test("is not valid with missing attrs", () => {
       const message = {

@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "module": "commonjs",
+    "lib": ["es2015", "es5"],
     "declaration": true,
     "outDir": "./dist",
     "moduleResolution": "node",
@@ -15,8 +16,8 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "typeRoots": ["../node_modules/@types", "./src/typings"],
-    "types": ["node"]
+    "typeRoots": ["./node_modules/@types", "./src/typings"],
+    "types": ["node", "jest"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "src/**/*.spec.ts"]

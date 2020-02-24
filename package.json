@@ -6,7 +6,6 @@
     "build": "tsc",
     "test": "jest"
   },
-  "type": "module",
   "files": [
     "dist/**/*",
     "schemas/**/*"
