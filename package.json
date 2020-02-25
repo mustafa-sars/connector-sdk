@@ -5,7 +5,10 @@
   "license": "AGPL-3.0-only",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "clean": "rm -rf ./lib/",
+    "prepare": "yarn clean && yarn build",
+    "prepublishOnly": "yarn test"
   },
   "files": [
     "bin/**/*",

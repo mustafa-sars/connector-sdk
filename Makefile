@@ -4,7 +4,11 @@ build:
 
 .PHONY: clean
 clean:
-	rm -rf lib
+	yarn clean
+
+.PHONY: publish
+publish:
+	yarn publish
 
 .PHONY: compile_schema
 compile_schema:
