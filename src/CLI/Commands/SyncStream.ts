@@ -56,7 +56,9 @@ export default class SyncStream extends AbstractCommand {
   }
 
   run() {
-    this.buildClient().syncStream(this.streamId, this.earliestDataCutoff)
+    this.buildClient().syncStream(this.streamId, this.earliestDataCutoff).then(
+      () => this.logger.info(`Done syncing ${this.streamId}`)
+    )
   }
 
   private buildManager(): Manager {
