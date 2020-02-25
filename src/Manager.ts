@@ -7,7 +7,7 @@ export interface MessageWriter {
 export class InvalidMessageError extends Error {
   constructor(message: string) {
     super(message)
-    this.name = "InvalidMessage"
+    this.name = InvalidMessageError.name
     Object.setPrototypeOf(this, InvalidMessageError.prototype)
   }
 
@@ -16,7 +16,7 @@ export class InvalidMessageError extends Error {
   }
 }
 
-class MessagesFacade {
+export class MessagesFacade {
   implementation: MessageWriter
 
   constructor(implementation: MessageWriter) {

@@ -1,21 +1,10 @@
 import { Logger, LoggerLevel } from "../Logger"
+import { FakeLoggerIO } from "../TestHelpers"
 
 describe(Logger, () => {
-  class StubLoggerIo {
-    messages: string[]
-
-    constructor() {
-      this.messages = []
-    }
-
-    public write(msg) {
-      this.messages.push(msg)
-    }
-  }
-
   describe("writing messages with logger levels", () => {
     test("it writes a message with default INFO level", () => {
-      const io = new StubLoggerIo()
+      const io = new FakeLoggerIO()
       const logger = new Logger(io)
 
       logger.info("hi")
@@ -24,7 +13,7 @@ describe(Logger, () => {
     })
 
     test("it doesn't write a message lower level", () => {
-      const io = new StubLoggerIo()
+      const io = new FakeLoggerIO()
       const logger = new Logger(io, { level: LoggerLevel.WARN })
 
       logger.info("hi")
@@ -34,7 +23,7 @@ describe(Logger, () => {
 
   describe("tags", () => {
     test("includes tags in messages", () => {
-      const io = new StubLoggerIo()
+      const io = new FakeLoggerIO()
       const logger = new Logger(io, { tags: ["foo"] })
 
       logger.info("hi")
@@ -43,7 +32,7 @@ describe(Logger, () => {
     })
 
     test("taggedChild builds a new logger with more tags", () => {
-      const io = new StubLoggerIo()
+      const io = new FakeLoggerIO()
       const logger = new Logger(io, { tags: ["foo"] })
       const logger2 = logger.taggedChild(["bar"])
 

@@ -5,7 +5,7 @@ export enum LoggerLevel {
   DEBUG = "DEBUG"
 }
 
-interface LoggerConfig {
+export interface LoggerConfig {
   level?: LoggerLevel,
   tags?: string[],
 }
@@ -22,8 +22,8 @@ const loggerLevelOrder = [
 ]
 
 export class Logger {
-  private io: LoggerIO
-  private config: LoggerConfig
+  protected io: LoggerIO
+  protected config: LoggerConfig
 
   constructor(io: LoggerIO, config?: LoggerConfig) {
     this.io = io
