@@ -64,9 +64,9 @@ export class Logger {
   private formatMessage(message: string) {
     if (this.tags.length > 0) {
       const tagsStr = this.tags.map((t) => `[${t}]`).join(" ")
-      return `${tagsStr} ${message}`
+      return `${tagsStr} ${message}\n`
     } else {
-      return message
+      return `${message}\n`
     }
   }
 }

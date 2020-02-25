@@ -20,7 +20,7 @@ describe(Logger, () => {
 
       logger.info("hi")
       expect(io.messages.length).toBe(1)
-      expect(io.messages[0]).toBe("hi")
+      expect(io.messages[0]).toBe("hi\n")
     })
 
     test("it doesn't write a message lower level", () => {
@@ -39,7 +39,7 @@ describe(Logger, () => {
 
       logger.info("hi")
       expect(io.messages.length).toBe(1)
-      expect(io.messages[0]).toBe("[foo] hi")
+      expect(io.messages[0]).toBe("[foo] hi\n")
     })
 
     test("taggedChild builds a new logger with more tags", () => {
@@ -49,7 +49,7 @@ describe(Logger, () => {
 
       logger2.info("hi")
       expect(io.messages.length).toBe(1)
-      expect(io.messages[0]).toBe("[foo] [bar] hi")
+      expect(io.messages[0]).toBe("[foo] [bar] hi\n")
     })
   })
 })

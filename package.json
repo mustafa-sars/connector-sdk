@@ -2,20 +2,30 @@
   "name": "codeclimate-collector-sdk",
   "version": "0.0.1",
   "description": "SDK for developing collectors for the Code Climate Platform",
+  "license": "AGPL-3.0-only",
   "scripts": {
     "build": "tsc",
     "test": "jest"
   },
   "files": [
-    "dist/**/*",
-    "schemas/**/*"
+    "bin/**/*",
+    "lib/**/*",
+    "schemas/**/*",
+    "README.md",
+    "LICENSE"
   ],
+  "main": "lib/index.js",
+  "bin": {
+    "codeclimate-collector": "bin/codeclimate-collector"
+  },
   "dependencies": {
-    "ajv": "^6.11.0"
+    "ajv": "^6.11.0",
+    "yargs-parser": "^17.0.0"
   },
   "devDependencies": {
     "@types/jest": "^25.1.3",
     "@types/node": "^13.7.4",
+    "@types/yargs-parser": "^15.0.0",
     "ajv-cli": "^3.0.0",
     "jest": "^25.1.0",
     "ts-jest": "^25.2.1",
