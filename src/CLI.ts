@@ -2,7 +2,6 @@ import * as YargsParser from "yargs-parser"
 
 import { Logger, LoggerLevel } from "./Logger"
 
-import { AbstractCommand } from "./CLI/Command"
 import SyncStream from "./CLI/Commands/SyncStream"
 import Help from "./CLI/Commands/Help"
 
@@ -28,10 +27,6 @@ export default class CLI {
   }
 
   run() {
-    this.findCommand().run()
-  }
-
-  private findCommand(): AbstractCommand {
     const cmdKlass = availableCommands.find(
       (c) => c.commandName() === this.commandName
     ) || Help
@@ -40,7 +35,11 @@ export default class CLI {
       this.mergedYargsParserOpts(cmdKlass.yargsParserOpts()),
     )
 
-    return new cmdKlass(parsedArgs, this.logger)
+    if (parsedArgs.help) {
+      cmdKlass.help()
+    } else {
+      (new cmdKlass(parsedArgs, this.logger)).run()
+    }
   }
 
   private static globalYargsYargsOpts() {
