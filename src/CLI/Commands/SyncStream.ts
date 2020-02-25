@@ -34,7 +34,10 @@ export default class SyncStream extends AbstractCommand {
   }
 
   get clientConfiguration(): ClientConfiguration {
-    return JSON.parse(readFileSync(this.configPath).toString())
+    const json = JSON.parse(readFileSync(this.configPath).toString())
+    return new Map(
+      Object.keys(json).map((key) => [key, json[key]])
+    )
   }
 
   get streamId(): string {
@@ -56,16 +59,16 @@ export default class SyncStream extends AbstractCommand {
   }
 
   run() {
-    this.buildClient().syncStream(this.streamId, this.earliestDataCutoff).then(
-      () => this.logger.info(`Done syncing ${this.streamId}`)
-    )
+    this.buildClient().syncStream(this.streamId, this.earliestDataCutoff).
+      then(() => this.logger.info(`Done syncing stream ${this.streamId}.`)).
+      catch((err) => { throw err })
   }
 
   private buildManager(): Manager {
     return new Manager(
       {
         sendMessage: (message) => {
-          this.logger.info(JSON.stringify(message))
+          this.logger.info(`Received message: ${JSON.stringify(message, null, "  ")}`)
         }
       }
     )
