@@ -11,7 +11,7 @@ export interface VerifyConfigurationResult {
 export interface ClientInterface {
   verifyConfiguration: () => Promise<VerifyConfigurationResult>
   discoverStreams?: () => Promise<void>
-  syncStream: (streamId: string | null, earliestDataCutoff: Date) => Promise<void>
+  syncStream: (stream: object | null, earliestDataCutoff: Date) => Promise<void>
 }
 
 export abstract class AbstractClient {

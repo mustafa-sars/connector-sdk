@@ -40,8 +40,8 @@ export default class SyncStream extends AbstractCommand {
     )
   }
 
-  get streamId(): string {
-    return this.yargs["_"][2] || ""
+  get stream(): object | null {
+    return JSON.parse(this.yargs["_"][2])
   }
 
   get earliestDataStr(): string {
@@ -59,8 +59,8 @@ export default class SyncStream extends AbstractCommand {
   }
 
   run() {
-    this.buildClient().syncStream(this.streamId, this.earliestDataCutoff).
-      then(() => this.logger.info(`Done syncing stream ${this.streamId}.`)).
+    this.buildClient().syncStream(this.stream, this.earliestDataCutoff).
+      then(() => this.logger.info(`Done syncing stream ${JSON.stringify(this.stream)}.`)).
       catch((err) => { throw err })
   }
 
