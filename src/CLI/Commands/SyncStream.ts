@@ -12,14 +12,14 @@ export default class SyncStream extends AbstractCommand {
       [
         "Code Climate Collector CLI",
         "",
-        "Usage: codeclimate-collector sync-stream <collector> <config-path> <stream-id> <earliest-data-cutoff>",
+        "Usage: codeclimate-collector sync-stream <collector> <config-path> <stream> <earliest-data-cutoff>",
         "",
         "Runs a sync process in a collector for a given stream.",
         "",
         "Arguments:",
         "\tcollector\tThe slug of the collector to run. E.g. if the collector is for PagerDuty and comes from the package codeclimate-collector-pagerduty, the slug is \"pagerduty\".",
         "\tconfig-path\tA path to a JSON file to parse and use as configuration for the collector.",
-        "\tstream-id\tThe identifier of the stream to sync. Some collectors may ignore this value.",
+        "\tstream\parseable JSON string representing the stream to sync. Some collectors may ignore this value, and in that case you can pass \"null\".",
         "\tearliest-data-cutoff\tHow far back in time the sync process should go. Should be iso8601 format.",
       ].join("\n") + "\n"
     )
