@@ -14,6 +14,7 @@ export default class Help extends AbstractCommand {
         "",
         "Available commands:",
         "\thelp\tShow this message",
+        "\tverify-configuration <collector> <config-path>\tRun a sync-stream process for a collector",
         "\tsync-stream <collector> <config-path> <stream-id> <earliest-data-cutoff>\tRun a sync-stream process for a collector",
         "",
         "Run `codeclimate-collector COMMAND --help` for command-specific help.",

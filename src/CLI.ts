@@ -3,9 +3,10 @@ import * as YargsParser from "yargs-parser"
 import { Logger, LoggerLevel } from "./Logger"
 
 import SyncStream from "./CLI/Commands/SyncStream"
+import VerifyConfiguration from "./CLI/Commands/VerifyConfiguration"
 import Help from "./CLI/Commands/Help"
 
-const availableCommands = [SyncStream, Help]
+const AVAILABLE_COMMANDS = [SyncStream, VerifyConfiguration, Help]
 
 export default class CLI {
   logger: Logger
@@ -27,7 +28,7 @@ export default class CLI {
   }
 
   run() {
-    const cmdKlass = availableCommands.find(
+    const cmdKlass = AVAILABLE_COMMANDS.find(
       (c) => c.commandName() === this.commandName
     ) || Help
     const parsedArgs = YargsParser(

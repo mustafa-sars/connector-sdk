@@ -4,21 +4,19 @@ import { AbstractCommand } from "../Command"
 import { ClientConfiguration, ClientInterface } from "../../Client"
 import { CollectorLoader } from "../CollectorLoader"
 
-export default class SyncStream extends AbstractCommand {
+export default class VerifyConfiguration extends AbstractCommand {
   static help() {
     process.stdout.write(
       [
         "Code Climate Collector CLI",
         "",
-        "Usage: codeclimate-collector sync-stream <collector> <config-path> <stream> <earliest-data-cutoff>",
+        "Usage: codeclimate-collector verify-configuration <collector> <config-path>",
         "",
-        "Runs a sync process in a collector for a given stream.",
+        "Verifies a collector's configuration.",
         "",
         "Arguments:",
         "\tcollector\tThe slug of the collector to run. E.g. if the collector is for PagerDuty and comes from the package codeclimate-collector-pagerduty, the slug is \"pagerduty\".",
         "\tconfig-path\tA path to a JSON file to parse and use as configuration for the collector.",
-        "\tstream\parseable JSON string representing the stream to sync. Some collectors may ignore this value, and in that case you can pass \"null\".",
-        "\tearliest-data-cutoff\tHow far back in time the sync process should go. Should be iso8601 format.",
       ].join("\n") + "\n"
     )
   }
@@ -38,27 +36,10 @@ export default class SyncStream extends AbstractCommand {
     )
   }
 
-  get stream(): object | null {
-    return JSON.parse(this.yargs["_"][2])
-  }
-
-  get earliestDataStr(): string {
-    return this.yargs["_"][3] || ""
-  }
-
-  get earliestDataCutoff(): Date {
-    const d = new Date(this.earliestDataStr)
-
-    if (isNaN(d.valueOf())) {
-      throw `"${this.earliestDataStr}" cannot be parsed as a timestamp`
-    }
-
-    return d
-  }
-
   run() {
-    this.buildClient().syncStream(this.stream, this.earliestDataCutoff).
-      then(() => this.logger.info(`Done syncing stream ${JSON.stringify(this.stream)}.`)).
+    console.log("Verifying configuration...")
+    this.buildClient().verifyConfiguration().
+      then((result) => console.log(`Result: ${JSON.stringify(result, null, "  ")}`)).
       catch((err) => { throw err })
   }
 
