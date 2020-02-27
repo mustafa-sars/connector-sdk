@@ -6,7 +6,8 @@
     "message": {
       "oneOf": [
         { "$ref": "#/$definitions/incident" }
-      ]
+      ],
+      "required": ["type"]
     },
     "incident": {
       "type": "object",

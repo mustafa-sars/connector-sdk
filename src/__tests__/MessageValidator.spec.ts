@@ -69,13 +69,12 @@ describe(MessageValidator, () => {
   })
 
   describe("object without type", () => {
-    // ajv considers this valid? ajv bug or bug in our schema?
-    test.skip("is not valid", () => {
+    test("is not valid", () => {
       const message = { }
       const validator = new MessageValidator(message)
 
       expect(validator.isValid).toBe(false)
-      expect(validator.errors[0]).toMatch(/unknown message type/)
+      expect(validator.errors[0]).toMatch(/required attribute "type"/)
     })
   })
 })

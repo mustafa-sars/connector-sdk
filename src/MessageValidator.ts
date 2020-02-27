@@ -22,24 +22,27 @@ export class MessageValidator {
   get errors(): string[] {
     this.validate()
 
-    return (this.ajvValidator.errors || []).
-      filter((e) => e.dataPath !== "").
-      map((e) => {
-        let p = e.params
+    let sourceErrs = this.ajvValidator.errors || []
 
-        if (p["missingProperty"]) {
-          return `${e.dataPath} missing required attribute "${p["missingProperty"]}"`
-        } else if (p["allowedValue"]) {
-          return `${e.dataPath} must be "${p["allowedValue"]}"`
-        } else if (p["allowedValues"]) {
-          return `${e.dataPath} must be one of ${p["allowedValues"].map((o) => `"${o}"`).join(", ")}`
-        } else if (p["format"]) {
-          return `${e.dataPath} must match format "${p["format"]}"`
-        } else {
-          return `${e.dataPath} ${e.message}`
-        }
-      })
+    if (!sourceErrs.every((e) => e.dataPath === "")) {
+      sourceErrs = sourceErrs.filter((e) => e.dataPath !== "")
+    }
 
+    return sourceErrs.map((e) => {
+      let p = e.params
+
+      if (p["missingProperty"]) {
+        return `${e.dataPath} missing required attribute "${p["missingProperty"]}"`
+      } else if (p["allowedValue"]) {
+        return `${e.dataPath} must be "${p["allowedValue"]}"`
+      } else if (p["allowedValues"]) {
+        return `${e.dataPath} must be one of ${p["allowedValues"].map((o) => `"${o}"`).join(", ")}`
+      } else if (p["format"]) {
+        return `${e.dataPath} must match format "${p["format"]}"`
+      } else {
+        return `${e.dataPath} ${e.message}`
+      }
+    })
   }
 
   private get ajvValidator(): Ajv.ValidateFunction {
