@@ -1,5 +1,5 @@
 import { Logger } from "./Logger"
-import { Manager } from "./Manager"
+import { RecordProducer } from "./RecordProducer"
 
 export type ClientConfiguration = Map<string, any>
 
@@ -17,7 +17,7 @@ export interface ClientInterface {
 export abstract class AbstractClient {
   constructor(
     public configuration: ClientConfiguration,
-    public manager: Manager,
+    public recordProducer: RecordProducer,
     public logger: Logger
   ) {
   }

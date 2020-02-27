@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from "fs";
 
 import { ClientConfiguration } from "../Client"
 import { Logger } from "../Logger"
-import { Manager } from "../Manager"
+import { RecordProducer, RecordProducerFacade } from "../RecordProducer"
 
 export class CollectorLoader {
   constructor(public collectorSlug: string, public clientConfiguration: ClientConfiguration, public logger: Logger) {
@@ -15,16 +15,16 @@ export class CollectorLoader {
 
     return new clientKlass(
       this.clientConfiguration,
-      this.buildManager(),
+      this.buildRecordProducer(),
       this.logger.taggedChild([this.collectorSlug]),
     )
   }
 
-  private buildManager(): Manager {
-    return new Manager(
+  private buildRecordProducer(): RecordProducer {
+    return new RecordProducerFacade(
       {
-        sendMessage: (message) => {
-          this.logger.info(`Received message: ${JSON.stringify(message, null, "  ")}`)
+        produce: (record) => {
+          this.logger.info(`Produced record: ${JSON.stringify(record, null, "  ")}`)
         }
       }
     )

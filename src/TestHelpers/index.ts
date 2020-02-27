@@ -1,5 +1,5 @@
 import { Logger, LoggerConfig } from "../Logger"
-import { Manager, MessagesFacade } from "../Manager"
+import { RecordProducerFacade } from "../RecordProducer"
 
 export class FakeLoggerIO {
   messages: string[] = []
@@ -9,31 +9,27 @@ export class FakeLoggerIO {
   }
 }
 
-export class FakeMessageWriter {
-  messages: object[] = []
-
-  public sendMessage(msg) {
-    this.messages.push(msg)
-  }
-}
-
 export class FakeLogger extends Logger {
   constructor(config?: LoggerConfig) {
     super(new FakeLoggerIO(), config)
   }
 
-  get messages() {
+  public get messages() {
     return (this.io as FakeLoggerIO).messages
   }
 }
 
-export class FakeManager extends Manager  {
+export class FakeRecordProducerFacade extends RecordProducerFacade  {
+  private _records: object[] = []
+
   constructor() {
-    super(new FakeMessageWriter())
+    super({
+      produce: (record) => this._records.push(record)
+    })
   }
 
-  get sentMessages() {
-    return ((this.messages as MessagesFacade).implementation as FakeMessageWriter).messages
+  public get records() {
+    return this._records
   }
 }
 
@@ -41,7 +37,7 @@ export function buildFakeLogger(): FakeLogger {
   return new FakeLogger()
 }
 
-export function buildFakeManager(): FakeManager {
-  return new FakeManager()
+export function buildRecordProducer(): FakeRecordProducerFacade {
+  return new FakeRecordProducerFacade()
 }
 

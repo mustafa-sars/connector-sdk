@@ -2,15 +2,13 @@ import * as Ajv from "ajv";
 import { resolve } from "path";
 import { readFileSync } from "fs";
 
-const schemaPath = resolve(__dirname, "../schemas/messages.json")
+const schemaPath = resolve(__dirname, "../schemas/records.json")
 
-export class MessageValidator {
-  public message: object
+export class RecordValidator {
   private _ajvValidator: Ajv.ValidateFunction | null = null
   private _isValid: boolean | null = null
 
-  constructor(message: object) {
-    this.message = message
+  constructor(public record: object) {
   }
 
   get isValid(): boolean {
@@ -56,7 +54,7 @@ export class MessageValidator {
 
   private validate() {
     if (this._isValid === null) {
-      this._isValid = this.ajvValidator(this.message) as boolean
+      this._isValid = this.ajvValidator(this.record) as boolean
     }
   }
 }

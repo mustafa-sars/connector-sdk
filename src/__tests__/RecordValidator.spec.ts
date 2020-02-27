@@ -1,16 +1,16 @@
-import { MessageValidator } from "../MessageValidator"
+import { RecordValidator } from "../RecordValidator"
 
-describe(MessageValidator, () => {
-  describe("incident messages", () => {
+describe(RecordValidator, () => {
+  describe("incident records", () => {
     test("is not valid with missing attrs", () => {
-      const message = {
+      const record = {
         type: "Incident",
         attributes: {
           id: "a1b2c3",
           title: "an incident"
         }
       }
-      const validator = new MessageValidator(message)
+      const validator = new RecordValidator(record)
 
       expect(validator.isValid).toBe(false)
       expect(validator.errors.length).toBeGreaterThan(2)
@@ -18,7 +18,7 @@ describe(MessageValidator, () => {
     })
 
     test("is not valid with incorrectly formatted attrs", () => {
-      const message = {
+      const record = {
         type: "Incident",
         attributes: {
           id: "a1b2c3",
@@ -29,7 +29,7 @@ describe(MessageValidator, () => {
           created_at: "not-a-time"
         }
       }
-      const validator = new MessageValidator(message)
+      const validator = new RecordValidator(record)
 
       expect(validator.isValid).toBe(false)
       expect(validator.errors.length).toBe(3)
@@ -39,7 +39,7 @@ describe(MessageValidator, () => {
     })
 
     test("is valid", () => {
-      const message = {
+      const record = {
         type: "Incident",
         attributes: {
           id: "a1b2c3",
@@ -50,19 +50,19 @@ describe(MessageValidator, () => {
           created_at: "2020-02-21 12:00:00Z"
         }
       }
-      const validator = new MessageValidator(message)
+      const validator = new RecordValidator(record)
 
       expect(validator.isValid).toBe(true)
     })
   })
 
-  describe("unknown message type", () => {
+  describe("unknown record type", () => {
     test("is not valid", () => {
-      const message = {
+      const record = {
         type: "Foo",
         attributes: { }
       }
-      const validator = new MessageValidator(message)
+      const validator = new RecordValidator(record)
 
       expect(validator.isValid).toBe(false)
     })
@@ -70,8 +70,8 @@ describe(MessageValidator, () => {
 
   describe("object without type", () => {
     test("is not valid", () => {
-      const message = { }
-      const validator = new MessageValidator(message)
+      const record = { }
+      const validator = new RecordValidator(record)
 
       expect(validator.isValid).toBe(false)
       expect(validator.errors[0]).toMatch(/required attribute "type"/)

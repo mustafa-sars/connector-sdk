@@ -5,4 +5,4 @@ export {
   VerifyConfigurationResult,
 } from "./Client"
 export { Logger } from "./Logger"
-export { Manager } from "./Manager"
+export { RecordProducer, RecordProducerFacade } from "./RecordProducer"
