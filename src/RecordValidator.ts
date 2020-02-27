@@ -5,7 +5,7 @@ import { readFileSync } from "fs";
 const schemaPath = resolve(__dirname, "../schemas/records.json")
 
 export class RecordValidator {
-  private _ajvValidator: Ajv.ValidateFunction | null = null
+  private _ajv: Ajv.Ajv | null = null
   private _isValid: boolean | null = null
 
   constructor(public record: object) {
@@ -20,7 +20,15 @@ export class RecordValidator {
   get errors(): string[] {
     this.validate()
 
-    let sourceErrs = this.ajvValidator.errors || []
+    if (!this.isValidType) {
+      if(!this.record["type"]) {
+        return ["missing required attribute \"type\""]
+      } else {
+        return [`"${this.record["type"]}" is not a recognized record type`]
+      }
+    }
+
+    let sourceErrs = this.ajv.errors || []
 
     if (!sourceErrs.every((e) => e.dataPath === "")) {
       sourceErrs = sourceErrs.filter((e) => e.dataPath !== "")
@@ -43,18 +51,42 @@ export class RecordValidator {
     })
   }
 
-  private get ajvValidator(): Ajv.ValidateFunction {
-    if (!this._ajvValidator) {
-      const ajv = new Ajv({ allErrors: true })
-      this._ajvValidator = ajv.compile(JSON.parse(readFileSync(schemaPath).toString()))
+  private get ajv(): Ajv.Ajv {
+    if (!this._ajv) {
+      this._ajv = new Ajv({ allErrors: true })
+      this._ajv.addSchema(
+        JSON.parse(readFileSync(schemaPath).toString()),
+        "records",
+      )
     }
 
-    return this._ajvValidator
+    return this._ajv
+  }
+
+  private get recordSchemaRef(): string {
+    return `records#/$definitions/${this.record["type"].toLowerCase()}`
+  }
+
+  private get isValidType(): boolean {
+    if (!this.record["type"]) {
+      return false
+    }
+
+    return undefined !== this.ajv.getSchema(this.recordSchemaRef)
   }
 
   private validate() {
     if (this._isValid === null) {
-      this._isValid = this.ajvValidator(this.record) as boolean
+      // short-circuit if no type/schema found
+      if (!this.isValidType) {
+        this._isValid = false
+        return
+      }
+
+      this._isValid = this.ajv.validate(
+        this.recordSchemaRef,
+        this.record,
+      ) as boolean
     }
   }
 }

@@ -1,7 +1,7 @@
 import { RecordValidator } from "../RecordValidator"
 
 describe(RecordValidator, () => {
-  describe("incident records", () => {
+  describe("Incident records", () => {
     test("is not valid with missing attrs", () => {
       const record = {
         type: "Incident",
@@ -56,6 +56,33 @@ describe(RecordValidator, () => {
     })
   })
 
+  describe("Stream records", () => {
+    it("is not valid without required keys", () => {
+      const record = {
+        type: "Stream",
+        attributes: {
+          name: "your stream",
+        }
+      }
+      const validator = new RecordValidator(record)
+
+      expect(validator.isValid).toBe(false)
+    })
+
+    it("is valid without optional keys", () => {
+      const record = {
+        type: "Stream",
+        attributes: {
+          id: "a1b2c3",
+          name: "your stream",
+        }
+      }
+      const validator = new RecordValidator(record)
+
+      expect(validator.isValid).toBe(true)
+    })
+  })
+
   describe("unknown record type", () => {
     test("is not valid", () => {
       const record = {
@@ -65,6 +92,7 @@ describe(RecordValidator, () => {
       const validator = new RecordValidator(record)
 
       expect(validator.isValid).toBe(false)
+      expect(validator.errors[0]).toMatch(/"Foo" is not a recognized record type/)
     })
   })
 
@@ -74,7 +102,7 @@ describe(RecordValidator, () => {
       const validator = new RecordValidator(record)
 
       expect(validator.isValid).toBe(false)
-      expect(validator.errors[0]).toMatch(/required attribute "type"/)
+      expect(validator.errors[0]).toMatch(/missing required attribute "type"/)
     })
   })
 })

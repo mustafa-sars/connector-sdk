@@ -5,7 +5,8 @@
   "$definitions": {
     "record": {
       "oneOf": [
-        { "$ref": "#/$definitions/incident" }
+        { "$ref": "#/$definitions/incident" },
+        { "$ref": "#/$definitions/stream" }
       ],
       "required": ["type"]
     },
@@ -54,6 +55,40 @@
           "required": [
             "id", "title", "html_url", "number", "status", "created_at"
           ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "stream": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Stream"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "An ID for this stream. Should be unique within the context of this collector for a given configuration."
+            },
+            "name": {
+              "type": "string",
+              "description": "A name for this stream"
+            },
+            "html_url": {
+              "description": "The URL for a human to view this stream",
+              "type": "string",
+              "format": "uri"
+            },
+            "self_url": {
+              "description": "The canonical URL for this stream",
+              "type": "string",
+              "format": "uri"
+          }
+          },
+          "required": ["id", "name"]
         },
         "required":  ["type", "attributes"]
       }

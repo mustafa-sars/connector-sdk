@@ -3,6 +3,7 @@ import { readFileSync } from "fs";
 import { AbstractCommand } from "../Command"
 import { ClientConfiguration, ClientInterface } from "../../Client"
 import { CollectorLoader } from "../CollectorLoader"
+import { Stream } from "../../Stream"
 
 export default class SyncStream extends AbstractCommand {
   static help() {
@@ -38,8 +39,8 @@ export default class SyncStream extends AbstractCommand {
     )
   }
 
-  get stream(): object | null {
-    return JSON.parse(this.yargs["_"][2])
+  get stream(): Stream {
+    return new Stream(JSON.parse(this.yargs["_"][2]))
   }
 
   get earliestDataStr(): string {
