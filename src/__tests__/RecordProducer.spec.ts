@@ -8,10 +8,10 @@ describe(RecordProducerFacade, () => {
         attributes: {
           id: "a1b2c3",
           title: "an incident",
-          html_url: "http://example.com",
+          htmlUrl: "http://example.com",
           number: 42,
           status: "acknowledged",
-          created_at: "2020-02-21 12:00:00Z"
+          createdAt: "2020-02-21 12:00:00Z"
         }
       }
       const mockWriter = jest.fn()

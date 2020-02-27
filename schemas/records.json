@@ -28,12 +28,12 @@
               "description": "The human-readable title of this incident",
               "type": "string"
             },
-            "self_url": {
+            "selfUrl": {
               "description": "The canonical URL for this incident",
               "type": "string",
               "format": "uri"
             },
-            "html_url": {
+            "htmlUrl": {
               "description": "The URL for a human to view this incident",
               "type": "string",
               "format": "uri"
@@ -46,14 +46,14 @@
               "description": "The status of this incident",
               "enum": ["triggered", "acknowledged", "resolved"]
             },
-            "created_at": {
+            "createdAt": {
               "description": "The time this incident began",
               "type": "string",
               "format": "date-time"
             }
           },
           "required": [
-            "id", "title", "html_url", "number", "status", "created_at"
+            "id", "title", "htmlUrl", "number", "status", "createdAt"
           ]
         },
         "required":  ["type", "attributes"]
@@ -77,12 +77,12 @@
               "type": "string",
               "description": "A name for this stream"
             },
-            "html_url": {
+            "htmlUrl": {
               "description": "The URL for a human to view this stream",
               "type": "string",
               "format": "uri"
             },
-            "self_url": {
+            "selfUrl": {
               "description": "The canonical URL for this stream",
               "type": "string",
               "format": "uri"

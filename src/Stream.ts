@@ -6,8 +6,8 @@ interface StreamRecord {
   attributes: {
     id: string
     name: string
-    html_url?: string
-    self_url?: string
+    htmlUrl?: string
+    selfUrl?: string
   }
 }
 
@@ -36,10 +36,10 @@ export class Stream {
   }
 
   public get htmlUrl(): string | undefined {
-    return this.record.attributes.html_url
+    return this.record.attributes.htmlUrl
   }
 
   public get selfUrl(): string | undefined {
-    return this.record.attributes.self_url
+    return this.record.attributes.selfUrl
   }
 }
