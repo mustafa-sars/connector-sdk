@@ -9,9 +9,7 @@ export class InvalidMessageError extends Error {
     super(message)
     this.name = InvalidMessageError.name
     Object.setPrototypeOf(this, InvalidMessageError.prototype)
-  }
-
-  toString() {
+  } toString() {
     return `${this.name} ${this.message}`
   }
 }
@@ -39,5 +37,9 @@ export class Manager {
 
   constructor(messages: MessageWriter) {
     this.messages = new MessagesFacade(messages)
+  }
+
+  public sendMessage(message: object) {
+    this.messages.sendMessage(message)
   }
 }
