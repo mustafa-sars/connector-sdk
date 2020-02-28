@@ -1,6 +1,6 @@
 {
   "name": "codeclimate-collector-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "SDK for developing collectors for the Code Climate Platform",
   "license": "AGPL-3.0-only",
   "scripts": {
