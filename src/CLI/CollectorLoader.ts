@@ -2,7 +2,7 @@ import { resolve } from "path";
 import { cwd } from "process";
 import { existsSync, readFileSync } from "fs";
 
-import { ClientConfiguration } from "../Client"
+import { ClientConfiguration, ClientInterface } from "../Client"
 import { Logger } from "../Logger"
 import { RecordProducer, RecordProducerFacade } from "../RecordProducer"
 import { State, StateManager } from "../StateManager"
@@ -11,7 +11,7 @@ export class CollectorLoader {
   constructor(public collectorSlug: string, public clientConfiguration: ClientConfiguration, public logger: Logger) {
   }
 
-  public buildClient() {
+  public buildClient(): ClientInterface {
     const clientKlass = this.requiredClientLib().Client
 
     return new clientKlass(

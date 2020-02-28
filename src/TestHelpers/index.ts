@@ -49,10 +49,14 @@ export class FakeStateManager implements StateManager {
   }
 }
 
+export function buildFakeStateManager(): FakeStateManager {
+  return new FakeStateManager()
+}
+
 export function buildFakeLogger(): FakeLogger {
   return new FakeLogger()
 }
 
-export function buildRecordProducer(): FakeRecordProducerFacade {
+export function buildFakeRecordProducer(): FakeRecordProducerFacade {
   return new FakeRecordProducerFacade()
 }

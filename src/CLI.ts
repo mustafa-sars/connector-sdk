@@ -2,11 +2,12 @@ import * as YargsParser from "yargs-parser"
 
 import { Logger, LoggerLevel } from "./Logger"
 
+import DiscoverStreams from "./CLI/Commands/DiscoverStreams"
 import SyncStream from "./CLI/Commands/SyncStream"
 import VerifyConfiguration from "./CLI/Commands/VerifyConfiguration"
 import Help from "./CLI/Commands/Help"
 
-const AVAILABLE_COMMANDS = [SyncStream, VerifyConfiguration, Help]
+const AVAILABLE_COMMANDS = [DiscoverStreams, SyncStream, VerifyConfiguration, Help]
 
 export default class CLI {
   logger: Logger
