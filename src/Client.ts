@@ -1,6 +1,7 @@
 import { Logger } from "./Logger"
 import { RecordProducer } from "./RecordProducer"
 import { Stream } from "./Stream"
+import { StateManager } from "./StateManager"
 
 export type ClientConfiguration = Map<string, any>
 
@@ -42,6 +43,7 @@ export abstract class AbstractClient {
   constructor(
     public configuration: ClientConfiguration,
     public recordProducer: RecordProducer,
+    public stateManager: StateManager,
     public logger: Logger
   ) {
   }

@@ -1,5 +1,6 @@
 import { Logger, LoggerConfig } from "../Logger"
 import { RecordProducerFacade } from "../RecordProducer"
+import { State, StateManager } from "../StateManager"
 
 export class FakeLoggerIO {
   messages: string[] = []
@@ -33,6 +34,21 @@ export class FakeRecordProducerFacade extends RecordProducerFacade  {
   }
 }
 
+export class FakeStateManager implements StateManager {
+  private state: State | null = null
+
+  constructor() {
+  }
+
+  get() {
+    return this.state
+  }
+
+  set(newState: State) {
+    this.state = newState
+  }
+}
+
 export function buildFakeLogger(): FakeLogger {
   return new FakeLogger()
 }
@@ -40,4 +56,3 @@ export function buildFakeLogger(): FakeLogger {
 export function buildRecordProducer(): FakeRecordProducerFacade {
   return new FakeRecordProducerFacade()
 }
-
