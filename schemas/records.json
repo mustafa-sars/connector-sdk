@@ -5,59 +5,10 @@
   "$definitions": {
     "record": {
       "oneOf": [
-        { "$ref": "#/$definitions/incident" },
-        { "$ref": "#/$definitions/stream" }
+        { "$ref": "#/$definitions/stream" },
+        { "$ref": "#/$definitions/incident" }
       ],
       "required": ["type"]
-    },
-    "incident": {
-      "type": "object",
-      "properties": {
-        "type": {
-          "type": "string",
-          "const": "Incident"
-        },
-        "attributes": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "description": "The unique ID of this incident from the incident response platform",
-              "type": "string"
-            },
-            "title": {
-              "description": "The human-readable title of this incident",
-              "type": "string"
-            },
-            "self": {
-              "description": "The canonical URI for this incident",
-              "type": "string",
-              "format": "uri"
-            },
-            "htmlUrl": {
-              "description": "The URL for a human to view this incident",
-              "type": "string",
-              "format": "uri"
-            },
-            "number": {
-              "description": "The number identifying this incident",
-              "type": "integer"
-            },
-            "status": {
-              "description": "The status of this incident",
-              "enum": ["triggered", "acknowledged", "resolved"]
-            },
-            "createdAt": {
-              "description": "The time this incident began",
-              "type": "string",
-              "format": "date-time"
-            }
-          },
-          "required": [
-            "id", "self", "title", "htmlUrl", "number", "status", "createdAt"
-          ]
-        },
-        "required":  ["type", "attributes"]
-      }
     },
     "stream": {
       "type": "object",
@@ -109,6 +60,55 @@
             }
           },
           "required": ["id", "self", "name"]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "incident": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Incident"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this incident from the incident response platform",
+              "type": "string"
+            },
+            "title": {
+              "description": "The human-readable title of this incident",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this incident",
+              "type": "string",
+              "format": "uri"
+            },
+            "htmlUrl": {
+              "description": "The URL for a human to view this incident",
+              "type": "string",
+              "format": "uri"
+            },
+            "number": {
+              "description": "The number identifying this incident",
+              "type": "integer"
+            },
+            "status": {
+              "description": "The status of this incident",
+              "enum": ["triggered", "acknowledged", "resolved"]
+            },
+            "createdAt": {
+              "description": "The time this incident began",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "id", "self", "title", "htmlUrl", "number", "status", "createdAt"
+          ]
         },
         "required":  ["type", "attributes"]
       }
