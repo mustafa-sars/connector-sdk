@@ -86,6 +86,26 @@
               "description": "The URL for a human to view this stream",
               "type": "string",
               "format": "uri"
+            },
+            "description": {
+              "description": "A description of this stream",
+              "type": "string"
+            },
+            "record": {
+              "type": "object",
+              "description": "A reference to another record represented by this Stream. E.g. a Stream could be a reference to a Repository.",
+              "attributes": {
+                "type": {
+                  "description": "The `type` of the record referred to by the `record` URI, if present",
+                  "type": "string"
+                },
+                "uri": {
+                  "description": "The `self` URI of the related record",
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "required": ["uri", "type"]
             }
           },
           "required": ["id", "self", "name"]
