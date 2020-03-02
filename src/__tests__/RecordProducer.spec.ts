@@ -7,6 +7,7 @@ describe(RecordProducerFacade, () => {
         type: "Incident",
         attributes: {
           id: "a1b2c3",
+          self: "http://example.com/incident/42",
           title: "an incident",
           htmlUrl: "http://example.com",
           number: 42,

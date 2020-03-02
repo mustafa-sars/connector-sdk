@@ -6,6 +6,7 @@ describe(Stream, () => {
       type: "Stream",
       attributes: {
         id: "a1b2",
+        self: "schema://id",
         name: "foo"
       }
     })

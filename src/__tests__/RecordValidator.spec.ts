@@ -7,6 +7,7 @@ describe(RecordValidator, () => {
         type: "Incident",
         attributes: {
           id: "a1b2c3",
+          self: "http://example.com",
           title: "an incident"
         }
       }
@@ -22,6 +23,7 @@ describe(RecordValidator, () => {
         type: "Incident",
         attributes: {
           id: "a1b2c3",
+          self: "http://example.com/incident/42",
           title: "an incident",
           htmlUrl: "not-a-url",
           number: 42,
@@ -43,6 +45,7 @@ describe(RecordValidator, () => {
         type: "Incident",
         attributes: {
           id: "a1b2c3",
+          self: "http://example.com/incident/42",
           title: "an incident",
           htmlUrl: "http://example.com",
           number: 42,
@@ -74,6 +77,7 @@ describe(RecordValidator, () => {
         type: "Stream",
         attributes: {
           id: "a1b2c3",
+          self: "yourschema://some-id",
           name: "your stream",
         }
       }
