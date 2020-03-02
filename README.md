@@ -7,7 +7,8 @@ collectors.
 ## Development
 
 Clone this repo, run `yarn install` to install dependencies. `yarn test` will
-run unit tests.
+run unit tests. See [DEVELOPERS.md](DEVELOPERS.md) for more in depth details
+about working on this package.
 
 ## CLI
 
