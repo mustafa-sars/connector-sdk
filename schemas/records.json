@@ -14,6 +14,7 @@
         { "$ref": "#/$definitions/deliveryWorkflow" },
         { "$ref": "#/$definitions/deliveryBuild" },
         { "$ref": "#/$definitions/deliveryJob" },
+        { "$ref": "#/$definitions/testResultTotals" },
         { "$ref": "#/$definitions/testResult" },
         { "$ref": "#/$definitions/coverageTotals" },
         { "$ref": "#/$definitions/fileCoverage" }
@@ -482,9 +483,53 @@
               "format": "date-time"
             }
           },
-          "required": [ "id", "self", "build" ]
+          "required": ["id", "self", "build"]
         },
         "required":  ["type", "attributes"]
+      }
+    },
+    "testResultTotals": {
+      "type": "object",
+      "description": "The result of a test from a Build",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "TestResultTotals"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this test result record.",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "build": {
+              "description": "The `self` URI of the related Build.",
+              "type": "string",
+              "format": "uri"
+            },
+            "job": {
+              "description": "The `self` URI of the related Job.",
+              "type": "string",
+              "format": "uri"
+            },
+            "totalTests": {
+              "description": "The total number of tests run",
+              "type": "integer"
+            },
+            "testsFailed": {
+              "description": "The number of tests run which failed",
+              "type": "integer"
+            }
+          },
+          "required": ["id", "self", "build"]
+        },
+        "required": ["type", "attributes"]
       }
     },
     "testResult": {
