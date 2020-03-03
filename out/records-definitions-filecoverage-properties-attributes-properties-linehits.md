@@ -1,7 +1,7 @@
-# Untitled array in undefined Schema
+# Untitled array in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/fileCoverage/properties/attributes/properties/lineHits
+https://platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/lineHits
 ```
 
 The number of hits on each line in the file, starting with line 1. An entry for every line should be present.

@@ -1,7 +1,7 @@
-# Untitled array in undefined Schema
+# Untitled array in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/repository/properties/attributes/properties/languages
+https://platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/languages
 ```
 
 Languages used in this array

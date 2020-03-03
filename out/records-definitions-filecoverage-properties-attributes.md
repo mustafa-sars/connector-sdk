@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/fileCoverage/properties/attributes
+https://platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes
 ```
 
 
@@ -17,18 +17,18 @@ undefined#/$definitions/fileCoverage/properties/attributes
 
 # undefined Properties
 
-| Property                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                            |
-| :------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [self](#self)             | `string`  | Required | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-self.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/self")             |
-| [repository](#repository) | `string`  | Required | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-repository.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/repository") |
-| [commitOid](#commitOid)   | `string`  | Required | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-commitoid.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/commitOid")   |
-| [file](#file)             | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-file.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/file")             |
-| [lineHits](#lineHits)     | `array`   | Required | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-linehits.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/lineHits")     |
-| [filesCount](#filesCount) | `integer` | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-filescount.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/filesCount") |
-| [htmlUrl](#htmlUrl)       | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-htmlurl.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/htmlUrl")       |
-| [createdAt](#createdAt)   | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-createdat.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/createdAt")   |
-| [updatedAt](#updatedAt)   | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-updatedat.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/updatedAt")   |
-| [deletedAt](#deletedAt)   | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-deletedat.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/deletedAt")   |
+| Property                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                     |
+| :------------------------ | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [self](#self)             | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/self")             |
+| [repository](#repository) | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-repository.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/repository") |
+| [commitOid](#commitOid)   | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-commitoid.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/commitOid")   |
+| [file](#file)             | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-file.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/file")             |
+| [lineHits](#lineHits)     | `array`   | Required | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-linehits.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/lineHits")     |
+| [filesCount](#filesCount) | `integer` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-filescount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/filesCount") |
+| [htmlUrl](#htmlUrl)       | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/htmlUrl")       |
+| [createdAt](#createdAt)   | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/createdAt")   |
+| [updatedAt](#updatedAt)   | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/updatedAt")   |
+| [deletedAt](#deletedAt)   | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/deletedAt")   |
 
 ## self
 
@@ -40,7 +40,7 @@ The canonical URI for this record.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-self.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/self")
 
 ### self Type
 
@@ -60,7 +60,7 @@ The `self` URI of the Repository this test coverage applies to.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-repository.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/repository")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-repository.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/repository")
 
 ### repository Type
 
@@ -80,7 +80,7 @@ The commit oid this test coverage is for.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-commitoid.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/commitOid")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-commitoid.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/commitOid")
 
 ### commitOid Type
 
@@ -96,7 +96,7 @@ The path of the file for these test results.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-file.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/file")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-file.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/file")
 
 ### file Type
 
@@ -112,7 +112,7 @@ The number of hits on each line in the file, starting with line 1. An entry for 
 -   is required
 -   Type: unknown\[]
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-linehits.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/lineHits")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-linehits.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/lineHits")
 
 ### lineHits Type
 
@@ -128,7 +128,7 @@ The number of files.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-filescount.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/filesCount")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-filescount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/filesCount")
 
 ### filesCount Type
 
@@ -148,7 +148,7 @@ The URL to view this coverage.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-htmlurl.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -168,7 +168,7 @@ The time this coverage was created.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-createdat.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/createdAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/createdAt")
 
 ### createdAt Type
 
@@ -188,7 +188,7 @@ The time this coverage was last updated.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-updatedat.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/updatedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/updatedAt")
 
 ### updatedAt Type
 
@@ -208,7 +208,7 @@ The time coverage was deleted.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes-properties-deletedat.md "undefined#/$definitions/fileCoverage/properties/attributes/properties/deletedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/deletedAt")
 
 ### deletedAt Type
 

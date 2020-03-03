@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/repository/properties/attributes/properties/languages/items
+https://platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/languages/items
 ```
 
 

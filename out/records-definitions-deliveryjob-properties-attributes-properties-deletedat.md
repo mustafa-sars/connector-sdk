@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryJob/properties/attributes/properties/deletedAt
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/deletedAt
 ```
 
 The time build was deleted.

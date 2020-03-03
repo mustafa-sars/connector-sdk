@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryBuild/properties/attributes/properties/finishedAt
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/finishedAt
 ```
 
 The time this build finished.

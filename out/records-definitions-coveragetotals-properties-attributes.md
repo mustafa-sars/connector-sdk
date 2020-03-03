@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/coverageTotals/properties/attributes
+https://platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes
 ```
 
 
@@ -17,22 +17,22 @@ undefined#/$definitions/coverageTotals/properties/attributes
 
 # undefined Properties
 
-| Property                              | Type      | Required | Nullable       | Defined by                                                                                                                                                                                            |
-| :------------------------------------ | --------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [self](#self)                         | `string`  | Required | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-self.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/self")                         |
-| [repository](#repository)             | `string`  | Required | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-repository.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/repository")             |
-| [commitOid](#commitOid)               | `string`  | Required | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-commitoid.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/commitOid")               |
-| [coverage](#coverage)                 | `number`  | Required | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-coverage.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/coverage")                 |
-| [filesCount](#filesCount)             | `integer` | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-filescount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/filesCount")             |
-| [linesCount](#linesCount)             | `integer` | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-linescount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/linesCount")             |
-| [linesHitCount](#linesHitCount)       | `integer` | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-lineshitcount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/linesHitCount")       |
-| [linesMissedCount](#linesMissedCount) | `integer` | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-linesmissedcount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/linesMissedCount") |
-| [branchesCount](#branchesCount)       | `integer` | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-branchescount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/branchesCount")       |
-| [methodsCount](#methodsCount)         | `integer` | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-methodscount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/methodsCount")         |
-| [htmlUrl](#htmlUrl)                   | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-htmlurl.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/htmlUrl")                   |
-| [createdAt](#createdAt)               | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-createdat.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/createdAt")               |
-| [updatedAt](#updatedAt)               | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-updatedat.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/updatedAt")               |
-| [deletedAt](#deletedAt)               | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-deletedat.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/deletedAt")               |
+| Property                              | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                                     |
+| :------------------------------------ | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [self](#self)                         | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/self")                         |
+| [repository](#repository)             | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-repository.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/repository")             |
+| [commitOid](#commitOid)               | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-commitoid.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/commitOid")               |
+| [coverage](#coverage)                 | `number`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-coverage.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/coverage")                 |
+| [filesCount](#filesCount)             | `integer` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-filescount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/filesCount")             |
+| [linesCount](#linesCount)             | `integer` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-linescount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/linesCount")             |
+| [linesHitCount](#linesHitCount)       | `integer` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-lineshitcount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/linesHitCount")       |
+| [linesMissedCount](#linesMissedCount) | `integer` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-linesmissedcount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/linesMissedCount") |
+| [branchesCount](#branchesCount)       | `integer` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-branchescount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/branchesCount")       |
+| [methodsCount](#methodsCount)         | `integer` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-methodscount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/methodsCount")         |
+| [htmlUrl](#htmlUrl)                   | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/htmlUrl")                   |
+| [createdAt](#createdAt)               | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/createdAt")               |
+| [updatedAt](#updatedAt)               | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/updatedAt")               |
+| [deletedAt](#deletedAt)               | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/deletedAt")               |
 
 ## self
 
@@ -44,7 +44,7 @@ The canonical URI for this record.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-self.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/self")
 
 ### self Type
 
@@ -64,7 +64,7 @@ The `self` URI of the Repository this test coverage applies to.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-repository.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/repository")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-repository.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/repository")
 
 ### repository Type
 
@@ -84,7 +84,7 @@ The commit oid this test coverage is for.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-commitoid.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/commitOid")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-commitoid.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/commitOid")
 
 ### commitOid Type
 
@@ -100,7 +100,7 @@ The coverage of this test coverage result, as a percentage
 -   is required
 -   Type: `number`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-coverage.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/coverage")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-coverage.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/coverage")
 
 ### coverage Type
 
@@ -122,7 +122,7 @@ The number of files.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-filescount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/filesCount")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-filescount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/filesCount")
 
 ### filesCount Type
 
@@ -142,7 +142,7 @@ The total number of lines under test.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-linescount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/linesCount")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-linescount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/linesCount")
 
 ### linesCount Type
 
@@ -162,7 +162,7 @@ The number of lines hit by the tests.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-lineshitcount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/linesHitCount")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-lineshitcount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/linesHitCount")
 
 ### linesHitCount Type
 
@@ -182,7 +182,7 @@ The number of lines missed by the tests.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-linesmissedcount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/linesMissedCount")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-linesmissedcount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/linesMissedCount")
 
 ### linesMissedCount Type
 
@@ -202,7 +202,7 @@ The number of branches.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-branchescount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/branchesCount")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-branchescount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/branchesCount")
 
 ### branchesCount Type
 
@@ -222,7 +222,7 @@ The number of methods tested.
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-methodscount.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/methodsCount")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-methodscount.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/methodsCount")
 
 ### methodsCount Type
 
@@ -242,7 +242,7 @@ The URL to view this coverage.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-htmlurl.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -262,7 +262,7 @@ The time this coverage was created.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-createdat.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/createdAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/createdAt")
 
 ### createdAt Type
 
@@ -282,7 +282,7 @@ The time this coverage was last updated.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-updatedat.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/updatedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/updatedAt")
 
 ### updatedAt Type
 
@@ -302,7 +302,7 @@ The time coverage was deleted.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes-properties-deletedat.md "undefined#/$definitions/coverageTotals/properties/attributes/properties/deletedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/deletedAt")
 
 ### deletedAt Type
 

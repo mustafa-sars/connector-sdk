@@ -1,7 +1,7 @@
-# Untitled null in undefined Schema
+# Untitled null in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/fileCoverage/properties/attributes/properties/lineHits/items/$oneOf/1
+https://platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/lineHits/items/$oneOf/1
 ```
 
 

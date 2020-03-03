@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/repository/properties/attributes/properties/owner
+https://platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner
 ```
 
 The owning entity of the repository - usually an organization or a user.
@@ -17,13 +17,13 @@ The owning entity of the repository - usually an organization or a user.
 
 # undefined Properties
 
-| Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                        |
-| :---------------------- | -------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)               | `string` | Required | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-id.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/id")               |
-| [type](#type)           | `string` | Required | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-type.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/type")           |
-| [name](#name)           | `string` | Required | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-name.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/name")           |
-| [htmlUrl](#htmlUrl)     | `string` | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-htmlurl.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/htmlUrl")     |
-| [avatarUrl](#avatarUrl) | `string` | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-avatarurl.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/avatarUrl") |
+| Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                 |
+| :---------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)               | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/id")               |
+| [type](#type)           | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/type")           |
+| [name](#name)           | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/name")           |
+| [htmlUrl](#htmlUrl)     | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/htmlUrl")     |
+| [avatarUrl](#avatarUrl) | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-avatarurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/avatarUrl") |
 
 ## id
 
@@ -35,7 +35,7 @@ The id of the owner.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-id.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/id")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/id")
 
 ### id Type
 
@@ -51,7 +51,7 @@ What type of owner this is.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-type.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/type")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/type")
 
 ### type Type
 
@@ -76,7 +76,7 @@ The owner's canonical name, e.g. a username.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-name.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/name")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/name")
 
 ### name Type
 
@@ -92,7 +92,7 @@ A web URL for this owner.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-htmlurl.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -112,7 +112,7 @@ An avatar for this owner.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-owner-properties-avatarurl.md "undefined#/$definitions/repository/properties/attributes/properties/owner/properties/avatarUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner-properties-avatarurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/avatarUrl")
 
 ### avatarUrl Type
 

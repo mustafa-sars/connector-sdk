@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/stream
+https://platform.codeclimate.com/schemas/records/stream#/$definitions/record/oneOf/0
 ```
 
 Streams are data sources that can be subscribed to.
@@ -11,17 +11,17 @@ Streams are data sources that can be subscribed to.
 | :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ----------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [records.json\*](records.json "open original schema") |
 
-## stream Type
+## 0 Type
 
 `object` ([Details](records-definitions-stream.md))
 
 # undefined Properties
 
-| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                    |
-| :------------------------ | ------------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| [type](#type)             | `string`      | Optional | cannot be null | [Untitled schema](records-definitions-stream-properties-type.md "undefined#/$definitions/stream/properties/type")             |
-| [attributes](#attributes) | `object`      | Optional | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes.md "undefined#/$definitions/stream/properties/attributes") |
-| [required](#required)     | Not specified | Optional | cannot be null | [Untitled schema](records-definitions-stream-properties-required.md "undefined#/$definitions/stream/properties/required")     |
+| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                    |
+| :------------------------ | ------------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [type](#type)             | `string`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/type")             |
+| [attributes](#attributes) | `object`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes") |
+| [required](#required)     | Not specified | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/required")     |
 
 ## type
 
@@ -33,7 +33,7 @@ Streams are data sources that can be subscribed to.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-type.md "undefined#/$definitions/stream/properties/type")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/type")
 
 ### type Type
 
@@ -57,7 +57,7 @@ Streams are data sources that can be subscribed to.
 -   is optional
 -   Type: `object` ([Details](records-definitions-stream-properties-attributes.md))
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes.md "undefined#/$definitions/stream/properties/attributes")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes")
 
 ### attributes Type
 
@@ -73,7 +73,7 @@ Streams are data sources that can be subscribed to.
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-required.md "undefined#/$definitions/stream/properties/required")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/required")
 
 ### required Type
 

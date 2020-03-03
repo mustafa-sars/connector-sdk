@@ -1,7 +1,7 @@
-# Untitled integer in undefined Schema
+# Untitled integer in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryBuild/properties/attributes/properties/number
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/number
 ```
 
 The number identifying this Build, if available

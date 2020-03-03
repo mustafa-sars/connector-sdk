@@ -1,7 +1,7 @@
-# Untitled boolean in undefined Schema
+# Untitled boolean in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/actor/properties/attributes/properties/bot
+https://platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/bot
 ```
 
 indicates the actor is not a human

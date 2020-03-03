@@ -1,7 +1,7 @@
-# Untitled boolean in undefined Schema
+# Untitled boolean in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/stream/properties/attributes/properties/subscribed
+https://platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/subscribed
 ```
 
 Represents if the stream has been subscribed to by a user within Code Climate

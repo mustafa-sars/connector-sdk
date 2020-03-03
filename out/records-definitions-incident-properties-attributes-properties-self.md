@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/incident/properties/attributes/properties/self
+https://platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/self
 ```
 
 The canonical URI for this record

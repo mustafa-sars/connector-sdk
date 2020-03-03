@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryJob/properties/attributes/properties/description
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/description
 ```
 
 The description of this Job.

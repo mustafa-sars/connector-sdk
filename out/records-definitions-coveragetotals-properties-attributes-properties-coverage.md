@@ -1,7 +1,7 @@
-# Untitled number in undefined Schema
+# Untitled number in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/coverageTotals/properties/attributes/properties/coverage
+https://platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/coverage
 ```
 
 The coverage of this test coverage result, as a percentage

@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryWorkflow/properties/type
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryWorkflow/properties/type
 ```
 
 

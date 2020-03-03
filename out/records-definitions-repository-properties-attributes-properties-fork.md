@@ -1,7 +1,7 @@
-# Untitled boolean in undefined Schema
+# Untitled boolean in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/repository/properties/attributes/properties/fork
+https://platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/fork
 ```
 
 A flag to mark this repository as a fork

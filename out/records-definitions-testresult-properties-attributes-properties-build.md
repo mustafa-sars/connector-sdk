@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/testResult/properties/attributes/properties/build
+https://platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/build
 ```
 
 The `self` URI of the related Build.

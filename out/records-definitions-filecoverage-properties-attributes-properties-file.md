@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/fileCoverage/properties/attributes/properties/file
+https://platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/file
 ```
 
 The path of the file for these test results.

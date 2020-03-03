@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/incident/properties/attributes/properties/htmlUrl
+https://platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/htmlUrl
 ```
 
 The URL for a human to view this incident

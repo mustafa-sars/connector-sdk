@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryJob/properties/attributes
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes
 ```
 
 
@@ -17,18 +17,18 @@ undefined#/$definitions/deliveryJob/properties/attributes
 
 # undefined Properties
 
-| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                                            |
-| :-------------------------- | -------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [id](#id)                   | `string` | Required | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-id.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/id")                   |
-| [self](#self)               | `string` | Required | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-self.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/self")               |
-| [build](#build)             | `string` | Required | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-build.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/build")             |
-| [description](#description) | `string` | Optional | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-description.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/description") |
-| [state](#state)             | `string` | Optional | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-state.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/state")             |
-| [htmlUrl](#htmlUrl)         | `string` | Optional | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-htmlurl.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/htmlUrl")         |
-| [createdAt](#createdAt)     | `string` | Optional | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-createdat.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/createdAt")     |
-| [updatedAt](#updatedAt)     | `string` | Optional | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-updatedat.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/updatedAt")     |
-| [finishedAt](#finishedAt)   | `string` | Optional | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-finishedat.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/finishedAt")   |
-| [deletedAt](#deletedAt)     | `string` | Optional | cannot be null | [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-deletedat.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/deletedAt")     |
+| Property                    | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                     |
+| :-------------------------- | -------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                   | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/id")                   |
+| [self](#self)               | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/self")               |
+| [build](#build)             | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-build.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/build")             |
+| [description](#description) | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-description.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/description") |
+| [state](#state)             | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-state.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/state")             |
+| [htmlUrl](#htmlUrl)         | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/htmlUrl")         |
+| [createdAt](#createdAt)     | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/createdAt")     |
+| [updatedAt](#updatedAt)     | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/updatedAt")     |
+| [finishedAt](#finishedAt)   | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-finishedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/finishedAt")   |
+| [deletedAt](#deletedAt)     | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/deletedAt")     |
 
 ## id
 
@@ -40,7 +40,7 @@ The unique ID of this Job.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-id.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/id")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/id")
 
 ### id Type
 
@@ -56,7 +56,7 @@ The canonical URI for this record.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-self.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/self")
 
 ### self Type
 
@@ -76,7 +76,7 @@ The `self` URI of the related Build.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-build.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/build")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-build.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/build")
 
 ### build Type
 
@@ -96,7 +96,7 @@ The description of this Job.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-description.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/description")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-description.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/description")
 
 ### description Type
 
@@ -112,7 +112,7 @@ The state of the Build.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-state.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/state")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-state.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/state")
 
 ### state Type
 
@@ -139,7 +139,7 @@ The URL to view this Build.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-htmlurl.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -159,7 +159,7 @@ The time this build was created.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-createdat.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/createdAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/createdAt")
 
 ### createdAt Type
 
@@ -179,7 +179,7 @@ The time this build was last updated.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-updatedat.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/updatedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/updatedAt")
 
 ### updatedAt Type
 
@@ -199,7 +199,7 @@ The time this build finished.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-finishedat.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/finishedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-finishedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/finishedAt")
 
 ### finishedAt Type
 
@@ -219,7 +219,7 @@ The time build was deleted.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliveryjob-properties-attributes-properties-deletedat.md "undefined#/$definitions/deliveryJob/properties/attributes/properties/deletedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliveryjob-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryJob/properties/attributes/properties/deletedAt")
 
 ### deletedAt Type
 

@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryBuild/properties/attributes
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes
 ```
 
 
@@ -17,21 +17,21 @@ undefined#/$definitions/deliveryBuild/properties/attributes
 
 # undefined Properties
 
-| Property                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                              |
-| :------------------------ | --------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                 | `string`  | Required | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-id.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/id")                 |
-| [self](#self)             | `string`  | Required | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-self.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/self")             |
-| [number](#number)         | `integer` | Optional | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-number.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/number")         |
-| [workflow](#workflow)     | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-workflow.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/workflow")     |
-| [repository](#repository) | `string`  | Required | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-repository.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/repository") |
-| [state](#state)           | `string`  | Required | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-state.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/state")           |
-| [commitOid](#commitOid)   | `string`  | Required | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-commitoid.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/commitOid")   |
-| [branch](#branch)         | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-branch.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/branch")         |
-| [htmlUrl](#htmlUrl)       | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-htmlurl.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/htmlUrl")       |
-| [createdAt](#createdAt)   | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-createdat.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/createdAt")   |
-| [updatedAt](#updatedAt)   | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-updatedat.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/updatedAt")   |
-| [finishedAt](#finishedAt) | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-finishedat.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/finishedAt") |
-| [deletedAt](#deletedAt)   | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-deletedat.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/deletedAt")   |
+| Property                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                       |
+| :------------------------ | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                 | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/id")                 |
+| [self](#self)             | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/self")             |
+| [number](#number)         | `integer` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-number.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/number")         |
+| [workflow](#workflow)     | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-workflow.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/workflow")     |
+| [repository](#repository) | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-repository.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/repository") |
+| [state](#state)           | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-state.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/state")           |
+| [commitOid](#commitOid)   | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-commitoid.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/commitOid")   |
+| [branch](#branch)         | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-branch.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/branch")         |
+| [htmlUrl](#htmlUrl)       | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/htmlUrl")       |
+| [createdAt](#createdAt)   | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/createdAt")   |
+| [updatedAt](#updatedAt)   | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/updatedAt")   |
+| [finishedAt](#finishedAt) | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-finishedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/finishedAt") |
+| [deletedAt](#deletedAt)   | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/deletedAt")   |
 
 ## id
 
@@ -43,7 +43,7 @@ The unique ID of this Build.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-id.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/id")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/id")
 
 ### id Type
 
@@ -59,7 +59,7 @@ The canonical URI for this record.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-self.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/self")
 
 ### self Type
 
@@ -79,7 +79,7 @@ The number identifying this Build, if available
 -   is optional
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-number.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/number")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-number.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/number")
 
 ### number Type
 
@@ -95,7 +95,7 @@ The `self` URI of the related Workflow, if it exists.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-workflow.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/workflow")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-workflow.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/workflow")
 
 ### workflow Type
 
@@ -115,7 +115,7 @@ The `self` URI of the related Repository, if it exists.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-repository.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/repository")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-repository.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/repository")
 
 ### repository Type
 
@@ -135,7 +135,7 @@ The state of the Build.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-state.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/state")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-state.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/state")
 
 ### state Type
 
@@ -162,7 +162,7 @@ The oid of the Commit this Build ran on, if present.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-commitoid.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/commitOid")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-commitoid.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/commitOid")
 
 ### commitOid Type
 
@@ -178,7 +178,7 @@ The name of the branch this Build ran on, if present.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-branch.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/branch")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-branch.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/branch")
 
 ### branch Type
 
@@ -194,7 +194,7 @@ The URL to view this Build.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-htmlurl.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -214,7 +214,7 @@ The time this build was created.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-createdat.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/createdAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/createdAt")
 
 ### createdAt Type
 
@@ -234,7 +234,7 @@ The time this build was last updated.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-updatedat.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/updatedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/updatedAt")
 
 ### updatedAt Type
 
@@ -254,7 +254,7 @@ The time this build finished.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-finishedat.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/finishedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-finishedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/finishedAt")
 
 ### finishedAt Type
 
@@ -274,7 +274,7 @@ The time build was deleted.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-deliverybuild-properties-attributes-properties-deletedat.md "undefined#/$definitions/deliveryBuild/properties/attributes/properties/deletedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-deliverybuild-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/deletedAt")
 
 ### deletedAt Type
 

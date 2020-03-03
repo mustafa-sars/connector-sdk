@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/fileCoverage/properties/attributes/properties/updatedAt
+https://platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/updatedAt
 ```
 
 The time this coverage was last updated.

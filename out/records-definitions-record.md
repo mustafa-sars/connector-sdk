@@ -1,7 +1,7 @@
-# Untitled schema Schema
+# Untitled undefined type in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/record
+https://platform.codeclimate.com/schemas/records#/$definitions/record
 ```
 
 
@@ -17,13 +17,13 @@ merged type ([Details](records-definitions-record.md))
 
 one (and only one) of
 
--   [Untitled schema](records-definitions-record-oneof-0.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-1.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-2.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-3.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-4.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-5.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-6.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-7.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-8.md "check type definition")
--   [Untitled schema](records-definitions-record-oneof-9.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-stream.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-actor.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-repository.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-incident.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-deliveryworkflow.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-deliverybuild.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-deliveryjob.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-testresult.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-coveragetotals.md "check type definition")
+-   [Untitled object in Code Climate Platform Schema](records-definitions-filecoverage.md "check type definition")

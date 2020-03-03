@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/actor/properties/attributes/properties/htmlUrl
+https://platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/htmlUrl
 ```
 
 A web URL for this actor

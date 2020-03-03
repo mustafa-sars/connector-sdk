@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/coverageTotals
+https://platform.codeclimate.com/schemas/records#/$definitions/coverageTotals
 ```
 
 Information about test coverage of a commit.
@@ -17,11 +17,11 @@ Information about test coverage of a commit.
 
 # undefined Properties
 
-| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                                    |
-| :------------------------ | ------------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
-| [type](#type)             | `string`      | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-type.md "undefined#/$definitions/coverageTotals/properties/type")             |
-| [attributes](#attributes) | `object`      | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-attributes.md "undefined#/$definitions/coverageTotals/properties/attributes") |
-| [required](#required)     | Not specified | Optional | cannot be null | [Untitled schema](records-definitions-coveragetotals-properties-required.md "undefined#/$definitions/coverageTotals/properties/required")     |
+| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                             |
+| :------------------------ | ------------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [type](#type)             | `string`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/type")             |
+| [attributes](#attributes) | `object`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes") |
+| [required](#required)     | Not specified | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-coveragetotals-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/required")     |
 
 ## type
 
@@ -33,7 +33,7 @@ Information about test coverage of a commit.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-type.md "undefined#/$definitions/coverageTotals/properties/type")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/type")
 
 ### type Type
 
@@ -57,7 +57,7 @@ Information about test coverage of a commit.
 -   is optional
 -   Type: `object` ([Details](records-definitions-coveragetotals-properties-attributes.md))
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-attributes.md "undefined#/$definitions/coverageTotals/properties/attributes")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes")
 
 ### attributes Type
 
@@ -73,7 +73,7 @@ Information about test coverage of a commit.
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-coveragetotals-properties-required.md "undefined#/$definitions/coverageTotals/properties/required")
+-   defined in: [Code Climate Platform Schema](records-definitions-coveragetotals-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/required")
 
 ### required Type
 

@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/coverageTotals/properties/attributes/properties/htmlUrl
+https://platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/htmlUrl
 ```
 
 The URL to view this coverage.

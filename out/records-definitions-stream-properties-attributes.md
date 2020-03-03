@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/stream/properties/attributes
+https://platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes
 ```
 
 
@@ -17,16 +17,16 @@ undefined#/$definitions/stream/properties/attributes
 
 # undefined Properties
 
-| Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                                                  |
-| :-------------------------- | --------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                   | `string`  | Required | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes-properties-id.md "undefined#/$definitions/stream/properties/attributes/properties/id")                   |
-| [self](#self)               | `string`  | Required | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes-properties-self.md "undefined#/$definitions/stream/properties/attributes/properties/self")               |
-| [name](#name)               | `string`  | Required | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes-properties-name.md "undefined#/$definitions/stream/properties/attributes/properties/name")               |
-| [htmlUrl](#htmlUrl)         | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes-properties-htmlurl.md "undefined#/$definitions/stream/properties/attributes/properties/htmlUrl")         |
-| [description](#description) | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes-properties-description.md "undefined#/$definitions/stream/properties/attributes/properties/description") |
-| [record](#record)           | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes-properties-record.md "undefined#/$definitions/stream/properties/attributes/properties/record")           |
-| [recordType](#recordType)   | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes-properties-recordtype.md "undefined#/$definitions/stream/properties/attributes/properties/recordType")   |
-| [subscribed](#subscribed)   | `boolean` | Optional | cannot be null | [Untitled schema](records-definitions-stream-properties-attributes-properties-subscribed.md "undefined#/$definitions/stream/properties/attributes/properties/subscribed")   |
+| Property                    | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                  |
+| :-------------------------- | --------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [id](#id)                   | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/id")                   |
+| [self](#self)               | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/self")               |
+| [name](#name)               | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/name")               |
+| [htmlUrl](#htmlUrl)         | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/htmlUrl")         |
+| [description](#description) | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-description.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/description") |
+| [record](#record)           | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-record.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/record")           |
+| [recordType](#recordType)   | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-recordtype.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/recordType")   |
+| [subscribed](#subscribed)   | `boolean` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-subscribed.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/subscribed")   |
 
 ## id
 
@@ -38,7 +38,7 @@ An ID for this stream. Should be unique within the context of this connector for
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes-properties-id.md "undefined#/$definitions/stream/properties/attributes/properties/id")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/id")
 
 ### id Type
 
@@ -54,7 +54,7 @@ The canonical URL for this stream
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes-properties-self.md "undefined#/$definitions/stream/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/self")
 
 ### self Type
 
@@ -74,7 +74,7 @@ A name for this stream
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes-properties-name.md "undefined#/$definitions/stream/properties/attributes/properties/name")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/name")
 
 ### name Type
 
@@ -90,7 +90,7 @@ The URL for a human to view this stream
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes-properties-htmlurl.md "undefined#/$definitions/stream/properties/attributes/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -110,7 +110,7 @@ A description of this stream
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes-properties-description.md "undefined#/$definitions/stream/properties/attributes/properties/description")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-description.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/description")
 
 ### description Type
 
@@ -126,7 +126,7 @@ A stream may be a representation of another record - use the URI of that record 
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes-properties-record.md "undefined#/$definitions/stream/properties/attributes/properties/record")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-record.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/record")
 
 ### record Type
 
@@ -146,7 +146,7 @@ The `type` of the record referred to by the `record` URI, if present
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes-properties-recordtype.md "undefined#/$definitions/stream/properties/attributes/properties/recordType")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-recordtype.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/recordType")
 
 ### recordType Type
 
@@ -162,7 +162,7 @@ Represents if the stream has been subscribed to by a user within Code Climate
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-stream-properties-attributes-properties-subscribed.md "undefined#/$definitions/stream/properties/attributes/properties/subscribed")
+-   defined in: [Code Climate Platform Schema](records-definitions-stream-properties-attributes-properties-subscribed.md "https&#x3A;//platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/subscribed")
 
 ### subscribed Type
 

@@ -1,7 +1,7 @@
-# Untitled integer in undefined Schema
+# Untitled integer in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/coverageTotals/properties/attributes/properties/branchesCount
+https://platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/branchesCount
 ```
 
 The number of branches.

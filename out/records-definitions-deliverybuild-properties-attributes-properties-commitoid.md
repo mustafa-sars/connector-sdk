@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryBuild/properties/attributes/properties/commitOid
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/commitOid
 ```
 
 The oid of the Commit this Build ran on, if present.

@@ -1,7 +1,7 @@
-# Untitled schema Schema
+# Untitled undefined type in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/incident/properties/attributes/properties/status
+https://platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/status
 ```
 
 The status of this incident

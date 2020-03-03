@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/actor/properties/attributes
+https://platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes
 ```
 
 
@@ -17,18 +17,18 @@ undefined#/$definitions/actor/properties/attributes
 
 # undefined Properties
 
-| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                            |
-| :---------------------- | --------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)               | `string`  | Required | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-id.md "undefined#/$definitions/actor/properties/attributes/properties/id")               |
-| [self](#self)           | `string`  | Required | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-self.md "undefined#/$definitions/actor/properties/attributes/properties/self")           |
-| [name](#name)           | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-name.md "undefined#/$definitions/actor/properties/attributes/properties/name")           |
-| [email](#email)         | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-email.md "undefined#/$definitions/actor/properties/attributes/properties/email")         |
-| [bot](#bot)             | `boolean` | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-bot.md "undefined#/$definitions/actor/properties/attributes/properties/bot")             |
-| [htmlUrl](#htmlUrl)     | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-htmlurl.md "undefined#/$definitions/actor/properties/attributes/properties/htmlUrl")     |
-| [avatarUrl](#avatarUrl) | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-avatarurl.md "undefined#/$definitions/actor/properties/attributes/properties/avatarUrl") |
-| [createdAt](#createdAt) | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-createdat.md "undefined#/$definitions/actor/properties/attributes/properties/createdAt") |
-| [updatedAt](#updatedAt) | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-updatedat.md "undefined#/$definitions/actor/properties/attributes/properties/updatedAt") |
-| [deletedAt](#deletedAt) | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes-properties-deletedat.md "undefined#/$definitions/actor/properties/attributes/properties/deletedAt") |
+| Property                | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                     |
+| :---------------------- | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)               | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/id")               |
+| [self](#self)           | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/self")           |
+| [name](#name)           | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/name")           |
+| [email](#email)         | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-email.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/email")         |
+| [bot](#bot)             | `boolean` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-bot.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/bot")             |
+| [htmlUrl](#htmlUrl)     | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/htmlUrl")     |
+| [avatarUrl](#avatarUrl) | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-avatarurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/avatarUrl") |
+| [createdAt](#createdAt) | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/createdAt") |
+| [updatedAt](#updatedAt) | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/updatedAt") |
+| [deletedAt](#deletedAt) | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/deletedAt") |
 
 ## id
 
@@ -40,7 +40,7 @@ The unique ID of this actor
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-id.md "undefined#/$definitions/actor/properties/attributes/properties/id")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/id")
 
 ### id Type
 
@@ -56,7 +56,7 @@ The canonical URI for this record
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-self.md "undefined#/$definitions/actor/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/self")
 
 ### self Type
 
@@ -76,7 +76,7 @@ The name of the actor
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-name.md "undefined#/$definitions/actor/properties/attributes/properties/name")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/name")
 
 ### name Type
 
@@ -92,7 +92,7 @@ The name of the email
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-email.md "undefined#/$definitions/actor/properties/attributes/properties/email")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-email.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/email")
 
 ### email Type
 
@@ -108,7 +108,7 @@ indicates the actor is not a human
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-bot.md "undefined#/$definitions/actor/properties/attributes/properties/bot")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-bot.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/bot")
 
 ### bot Type
 
@@ -124,7 +124,7 @@ A web URL for this actor
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-htmlurl.md "undefined#/$definitions/actor/properties/attributes/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -144,7 +144,7 @@ a URL for an avatar for this actor
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-avatarurl.md "undefined#/$definitions/actor/properties/attributes/properties/avatarUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-avatarurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/avatarUrl")
 
 ### avatarUrl Type
 
@@ -164,7 +164,7 @@ The time actor repository was created
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-createdat.md "undefined#/$definitions/actor/properties/attributes/properties/createdAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/createdAt")
 
 ### createdAt Type
 
@@ -184,7 +184,7 @@ The time this actor was updated
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-updatedat.md "undefined#/$definitions/actor/properties/attributes/properties/updatedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/updatedAt")
 
 ### updatedAt Type
 
@@ -204,7 +204,7 @@ The time this actor was deleted
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes-properties-deletedat.md "undefined#/$definitions/actor/properties/attributes/properties/deletedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/deletedAt")
 
 ### deletedAt Type
 

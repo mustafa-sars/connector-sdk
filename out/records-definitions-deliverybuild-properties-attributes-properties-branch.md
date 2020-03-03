@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/deliveryBuild/properties/attributes/properties/branch
+https://platform.codeclimate.com/schemas/records#/$definitions/deliveryBuild/properties/attributes/properties/branch
 ```
 
 The name of the branch this Build ran on, if present.

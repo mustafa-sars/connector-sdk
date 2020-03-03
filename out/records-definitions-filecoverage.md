@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/fileCoverage
+https://platform.codeclimate.com/schemas/records#/$definitions/fileCoverage
 ```
 
 Information about test coverage of a file within a commit.
@@ -17,11 +17,11 @@ Information about test coverage of a file within a commit.
 
 # undefined Properties
 
-| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                                |
-| :------------------------ | ------------- | -------- | -------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| [type](#type)             | `string`      | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-type.md "undefined#/$definitions/fileCoverage/properties/type")             |
-| [attributes](#attributes) | `object`      | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-attributes.md "undefined#/$definitions/fileCoverage/properties/attributes") |
-| [required](#required)     | Not specified | Optional | cannot be null | [Untitled schema](records-definitions-filecoverage-properties-required.md "undefined#/$definitions/fileCoverage/properties/required")     |
+| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                         |
+| :------------------------ | ------------- | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [type](#type)             | `string`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/type")             |
+| [attributes](#attributes) | `object`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes") |
+| [required](#required)     | Not specified | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-filecoverage-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/required")     |
 
 ## type
 
@@ -33,7 +33,7 @@ Information about test coverage of a file within a commit.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-type.md "undefined#/$definitions/fileCoverage/properties/type")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/type")
 
 ### type Type
 
@@ -57,7 +57,7 @@ Information about test coverage of a file within a commit.
 -   is optional
 -   Type: `object` ([Details](records-definitions-filecoverage-properties-attributes.md))
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-attributes.md "undefined#/$definitions/fileCoverage/properties/attributes")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes")
 
 ### attributes Type
 
@@ -73,7 +73,7 @@ Information about test coverage of a file within a commit.
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-filecoverage-properties-required.md "undefined#/$definitions/fileCoverage/properties/required")
+-   defined in: [Code Climate Platform Schema](records-definitions-filecoverage-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/required")
 
 ### required Type
 

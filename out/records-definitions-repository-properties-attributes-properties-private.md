@@ -1,7 +1,7 @@
-# Untitled boolean in undefined Schema
+# Untitled boolean in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/repository/properties/attributes/properties/private
+https://platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/private
 ```
 
 A flag to mark this repository as private (if false, that indicates the repository is public)

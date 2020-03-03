@@ -1,7 +1,7 @@
-# Untitled integer in undefined Schema
+# Untitled integer in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/fileCoverage/properties/attributes/properties/lineHits/items/$oneOf/0
+https://platform.codeclimate.com/schemas/records#/$definitions/fileCoverage/properties/attributes/properties/lineHits/items/$oneOf/0
 ```
 
 

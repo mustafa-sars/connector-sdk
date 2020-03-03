@@ -1,5 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://platform.codeclimate.com/schemas/records",
+  "title": "Code Climate Platform Schema",
   "description": "Schema for Code Climate Connector records",
   "$ref": "#/$definitions/record",
   "$definitions": {
@@ -19,6 +21,7 @@
       "required": ["type"]
     },
     "stream": {
+      "$id": "https://platform.codeclimate.com/schemas/records/stream",
       "type": "object",
       "description": "Streams are data sources that can be subscribed to.",
       "properties": {

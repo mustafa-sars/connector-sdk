@@ -1,7 +1,7 @@
-# Untitled schema Schema
+# Untitled undefined type in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/coverageTotals/properties/attributes/properties
+https://platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties
 ```
 
 

@@ -1,7 +1,7 @@
 # \[object Object] Schema
 
 ```txt
-undefined#/$definitions/incident/properties/attributes/properties
+https://platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties
 ```
 
 

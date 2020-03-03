@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/incident
+https://platform.codeclimate.com/schemas/records#/$definitions/incident
 ```
 
 Incidents are a normalized, de-duplicated event. It can be thought of as a problem or an issue within your service that needs to be addressed and resolved.
@@ -17,11 +17,11 @@ Incidents are a normalized, de-duplicated event. It can be thought of as a probl
 
 # undefined Properties
 
-| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                        |
-| :------------------------ | ------------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| [type](#type)             | `string`      | Optional | cannot be null | [Untitled schema](records-definitions-incident-properties-type.md "undefined#/$definitions/incident/properties/type")             |
-| [attributes](#attributes) | `object`      | Optional | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes.md "undefined#/$definitions/incident/properties/attributes") |
-| [required](#required)     | Not specified | Optional | cannot be null | [Untitled schema](records-definitions-incident-properties-required.md "undefined#/$definitions/incident/properties/required")     |
+| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                                 |
+| :------------------------ | ------------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [type](#type)             | `string`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/type")             |
+| [attributes](#attributes) | `object`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes") |
+| [required](#required)     | Not specified | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/required")     |
 
 ## type
 
@@ -33,7 +33,7 @@ Incidents are a normalized, de-duplicated event. It can be thought of as a probl
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-type.md "undefined#/$definitions/incident/properties/type")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/type")
 
 ### type Type
 
@@ -57,7 +57,7 @@ Incidents are a normalized, de-duplicated event. It can be thought of as a probl
 -   is optional
 -   Type: `object` ([Details](records-definitions-incident-properties-attributes.md))
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes.md "undefined#/$definitions/incident/properties/attributes")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes")
 
 ### attributes Type
 
@@ -73,7 +73,7 @@ Incidents are a normalized, de-duplicated event. It can be thought of as a probl
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-required.md "undefined#/$definitions/incident/properties/required")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/required")
 
 ### required Type
 

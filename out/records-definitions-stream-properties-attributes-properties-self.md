@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/stream/properties/attributes/properties/self
+https://platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/self
 ```
 
 The canonical URL for this stream

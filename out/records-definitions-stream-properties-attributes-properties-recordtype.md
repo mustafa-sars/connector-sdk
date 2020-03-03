@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/stream/properties/attributes/properties/recordType
+https://platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/recordType
 ```
 
 The `type` of the record referred to by the `record` URI, if present

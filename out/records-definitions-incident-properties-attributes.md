@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/incident/properties/attributes
+https://platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes
 ```
 
 
@@ -17,17 +17,17 @@ undefined#/$definitions/incident/properties/attributes
 
 # undefined Properties
 
-| Property                | Type          | Required | Nullable       | Defined by                                                                                                                                                                  |
-| :---------------------- | ------------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)               | `string`      | Required | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-id.md "undefined#/$definitions/incident/properties/attributes/properties/id")               |
-| [self](#self)           | `string`      | Required | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-self.md "undefined#/$definitions/incident/properties/attributes/properties/self")           |
-| [title](#title)         | `string`      | Required | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-title.md "undefined#/$definitions/incident/properties/attributes/properties/title")         |
-| [htmlUrl](#htmlUrl)     | `string`      | Required | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-htmlurl.md "undefined#/$definitions/incident/properties/attributes/properties/htmlUrl")     |
-| [number](#number)       | `integer`     | Required | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-number.md "undefined#/$definitions/incident/properties/attributes/properties/number")       |
-| [status](#status)       | Not specified | Required | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-status.md "undefined#/$definitions/incident/properties/attributes/properties/status")       |
-| [createdAt](#createdAt) | `string`      | Required | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-createdat.md "undefined#/$definitions/incident/properties/attributes/properties/createdAt") |
-| [updatedAt](#updatedAt) | `string`      | Optional | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-updatedat.md "undefined#/$definitions/incident/properties/attributes/properties/updatedAt") |
-| [deletedAt](#deletedAt) | `string`      | Optional | cannot be null | [Untitled schema](records-definitions-incident-properties-attributes-properties-deletedat.md "undefined#/$definitions/incident/properties/attributes/properties/deletedAt") |
+| Property                | Type          | Required | Nullable       | Defined by                                                                                                                                                                                                                           |
+| :---------------------- | ------------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)               | `string`      | Required | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/id")               |
+| [self](#self)           | `string`      | Required | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/self")           |
+| [title](#title)         | `string`      | Required | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-title.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/title")         |
+| [htmlUrl](#htmlUrl)     | `string`      | Required | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/htmlUrl")     |
+| [number](#number)       | `integer`     | Required | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-number.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/number")       |
+| [status](#status)       | Not specified | Required | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-status.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/status")       |
+| [createdAt](#createdAt) | `string`      | Required | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/createdAt") |
+| [updatedAt](#updatedAt) | `string`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/updatedAt") |
+| [deletedAt](#deletedAt) | `string`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/deletedAt") |
 
 ## id
 
@@ -39,7 +39,7 @@ The unique ID of this incident from the incident response platform
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-id.md "undefined#/$definitions/incident/properties/attributes/properties/id")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/id")
 
 ### id Type
 
@@ -55,7 +55,7 @@ The canonical URI for this record
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-self.md "undefined#/$definitions/incident/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/self")
 
 ### self Type
 
@@ -75,7 +75,7 @@ The human-readable title of this incident
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-title.md "undefined#/$definitions/incident/properties/attributes/properties/title")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-title.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/title")
 
 ### title Type
 
@@ -91,7 +91,7 @@ The URL for a human to view this incident
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-htmlurl.md "undefined#/$definitions/incident/properties/attributes/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -111,7 +111,7 @@ The number identifying this incident
 -   is required
 -   Type: `integer`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-number.md "undefined#/$definitions/incident/properties/attributes/properties/number")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-number.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/number")
 
 ### number Type
 
@@ -127,7 +127,7 @@ The status of this incident
 -   is required
 -   Type: unknown
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-status.md "undefined#/$definitions/incident/properties/attributes/properties/status")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-status.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/status")
 
 ### status Type
 
@@ -153,7 +153,7 @@ The time this incident began.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-createdat.md "undefined#/$definitions/incident/properties/attributes/properties/createdAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/createdAt")
 
 ### createdAt Type
 
@@ -173,7 +173,7 @@ The time this incident was last updated.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-updatedat.md "undefined#/$definitions/incident/properties/attributes/properties/updatedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/updatedAt")
 
 ### updatedAt Type
 
@@ -193,7 +193,7 @@ The time this incident was deleted.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-incident-properties-attributes-properties-deletedat.md "undefined#/$definitions/incident/properties/attributes/properties/deletedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-incident-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/deletedAt")
 
 ### deletedAt Type
 

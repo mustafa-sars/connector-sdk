@@ -1,7 +1,7 @@
-# Untitled schema Schema
+# Code Climate Platform Schema Schema
 
 ```txt
-undefined
+https://platform.codeclimate.com/schemas/records
 ```
 
 Schema for Code Climate Connector records
@@ -11,6 +11,6 @@ Schema for Code Climate Connector records
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | --------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [records.json](records.json "open original schema") |
 
-## Untitled schema Type
+## Code Climate Platform Schema Type
 
-unknown
+unknown ([Code Climate Platform Schema](records.md))

@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/testResult/properties/attributes
+https://platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes
 ```
 
 
@@ -17,20 +17,20 @@ undefined#/$definitions/testResult/properties/attributes
 
 # undefined Properties
 
-| Property                  | Type     | Required | Nullable       | Defined by                                                                                                                                                                        |
-| :------------------------ | -------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                 | `string` | Required | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-id.md "undefined#/$definitions/testResult/properties/attributes/properties/id")                 |
-| [self](#self)             | `string` | Required | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-self.md "undefined#/$definitions/testResult/properties/attributes/properties/self")             |
-| [build](#build)           | `string` | Required | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-build.md "undefined#/$definitions/testResult/properties/attributes/properties/build")           |
-| [job](#job)               | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-job.md "undefined#/$definitions/testResult/properties/attributes/properties/job")               |
-| [state](#state)           | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-state.md "undefined#/$definitions/testResult/properties/attributes/properties/state")           |
-| [file](#file)             | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-file.md "undefined#/$definitions/testResult/properties/attributes/properties/file")             |
-| [message](#message)       | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-message.md "undefined#/$definitions/testResult/properties/attributes/properties/message")       |
-| [name](#name)             | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-name.md "undefined#/$definitions/testResult/properties/attributes/properties/name")             |
-| [createdAt](#createdAt)   | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-createdat.md "undefined#/$definitions/testResult/properties/attributes/properties/createdAt")   |
-| [updatedAt](#updatedAt)   | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-updatedat.md "undefined#/$definitions/testResult/properties/attributes/properties/updatedAt")   |
-| [finishedAt](#finishedAt) | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-finishedat.md "undefined#/$definitions/testResult/properties/attributes/properties/finishedAt") |
-| [deletedAt](#deletedAt)   | `string` | Optional | cannot be null | [Untitled schema](records-definitions-testresult-properties-attributes-properties-deletedat.md "undefined#/$definitions/testResult/properties/attributes/properties/deletedAt")   |
+| Property                  | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                 |
+| :------------------------ | -------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                 | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/id")                 |
+| [self](#self)             | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/self")             |
+| [build](#build)           | `string` | Required | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-build.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/build")           |
+| [job](#job)               | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-job.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/job")               |
+| [state](#state)           | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-state.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/state")           |
+| [file](#file)             | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-file.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/file")             |
+| [message](#message)       | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-message.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/message")       |
+| [name](#name)             | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/name")             |
+| [createdAt](#createdAt)   | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/createdAt")   |
+| [updatedAt](#updatedAt)   | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/updatedAt")   |
+| [finishedAt](#finishedAt) | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-finishedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/finishedAt") |
+| [deletedAt](#deletedAt)   | `string` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/deletedAt")   |
 
 ## id
 
@@ -42,7 +42,7 @@ The unique ID of this test result record.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-id.md "undefined#/$definitions/testResult/properties/attributes/properties/id")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/id")
 
 ### id Type
 
@@ -58,7 +58,7 @@ The canonical URI for this record.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-self.md "undefined#/$definitions/testResult/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/self")
 
 ### self Type
 
@@ -78,7 +78,7 @@ The `self` URI of the related Build.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-build.md "undefined#/$definitions/testResult/properties/attributes/properties/build")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-build.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/build")
 
 ### build Type
 
@@ -98,7 +98,7 @@ The `self` URI of the related Job.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-job.md "undefined#/$definitions/testResult/properties/attributes/properties/job")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-job.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/job")
 
 ### job Type
 
@@ -118,7 +118,7 @@ The state of the test result
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-state.md "undefined#/$definitions/testResult/properties/attributes/properties/state")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-state.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/state")
 
 ### state Type
 
@@ -143,7 +143,7 @@ The file in which this test is defined.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-file.md "undefined#/$definitions/testResult/properties/attributes/properties/file")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-file.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/file")
 
 ### file Type
 
@@ -159,7 +159,7 @@ The associated message for this result.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-message.md "undefined#/$definitions/testResult/properties/attributes/properties/message")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-message.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/message")
 
 ### message Type
 
@@ -175,7 +175,7 @@ The name of the test.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-name.md "undefined#/$definitions/testResult/properties/attributes/properties/name")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/name")
 
 ### name Type
 
@@ -191,7 +191,7 @@ The time this build was created.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-createdat.md "undefined#/$definitions/testResult/properties/attributes/properties/createdAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/createdAt")
 
 ### createdAt Type
 
@@ -211,7 +211,7 @@ The time this build was last updated.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-updatedat.md "undefined#/$definitions/testResult/properties/attributes/properties/updatedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/updatedAt")
 
 ### updatedAt Type
 
@@ -231,7 +231,7 @@ The time this build finished.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-finishedat.md "undefined#/$definitions/testResult/properties/attributes/properties/finishedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-finishedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/finishedAt")
 
 ### finishedAt Type
 
@@ -251,7 +251,7 @@ The time build was deleted.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-testresult-properties-attributes-properties-deletedat.md "undefined#/$definitions/testResult/properties/attributes/properties/deletedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-testresult-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/testResult/properties/attributes/properties/deletedAt")
 
 ### deletedAt Type
 

@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/incident/properties/attributes/properties/createdAt
+https://platform.codeclimate.com/schemas/records#/$definitions/incident/properties/attributes/properties/createdAt
 ```
 
 The time this incident began.

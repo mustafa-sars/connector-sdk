@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/repository/properties/attributes
+https://platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes
 ```
 
 
@@ -17,20 +17,20 @@ undefined#/$definitions/repository/properties/attributes
 
 # undefined Properties
 
-| Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                              |
-| :------------------------------ | --------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                       | `string`  | Required | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-id.md "undefined#/$definitions/repository/properties/attributes/properties/id")                       |
-| [self](#self)                   | `string`  | Required | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-self.md "undefined#/$definitions/repository/properties/attributes/properties/self")                   |
-| [owner](#owner)                 | `object`  | Required | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-owner.md "undefined#/$definitions/repository/properties/attributes/properties/owner")                 |
-| [name](#name)                   | `string`  | Required | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-name.md "undefined#/$definitions/repository/properties/attributes/properties/name")                   |
-| [htmlUrl](#htmlUrl)             | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-htmlurl.md "undefined#/$definitions/repository/properties/attributes/properties/htmlUrl")             |
-| [defaultBranch](#defaultBranch) | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-defaultbranch.md "undefined#/$definitions/repository/properties/attributes/properties/defaultBranch") |
-| [languages](#languages)         | `array`   | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-languages.md "undefined#/$definitions/repository/properties/attributes/properties/languages")         |
-| [fork](#fork)                   | `boolean` | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-fork.md "undefined#/$definitions/repository/properties/attributes/properties/fork")                   |
-| [private](#private)             | `boolean` | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-private.md "undefined#/$definitions/repository/properties/attributes/properties/private")             |
-| [createdAt](#createdAt)         | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-createdat.md "undefined#/$definitions/repository/properties/attributes/properties/createdAt")         |
-| [updatedAt](#updatedAt)         | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-updatedat.md "undefined#/$definitions/repository/properties/attributes/properties/updatedAt")         |
-| [deletedAt](#deletedAt)         | `string`  | Optional | cannot be null | [Untitled schema](records-definitions-repository-properties-attributes-properties-deletedat.md "undefined#/$definitions/repository/properties/attributes/properties/deletedAt")         |
+| Property                        | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                                       |
+| :------------------------------ | --------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                       | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/id")                       |
+| [self](#self)                   | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/self")                   |
+| [owner](#owner)                 | `object`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner")                 |
+| [name](#name)                   | `string`  | Required | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/name")                   |
+| [htmlUrl](#htmlUrl)             | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/htmlUrl")             |
+| [defaultBranch](#defaultBranch) | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-defaultbranch.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/defaultBranch") |
+| [languages](#languages)         | `array`   | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-languages.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/languages")         |
+| [fork](#fork)                   | `boolean` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-fork.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/fork")                   |
+| [private](#private)             | `boolean` | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-private.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/private")             |
+| [createdAt](#createdAt)         | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/createdAt")         |
+| [updatedAt](#updatedAt)         | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/updatedAt")         |
+| [deletedAt](#deletedAt)         | `string`  | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/deletedAt")         |
 
 ## id
 
@@ -42,7 +42,7 @@ The unique ID of this repository.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-id.md "undefined#/$definitions/repository/properties/attributes/properties/id")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-id.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/id")
 
 ### id Type
 
@@ -58,7 +58,7 @@ The canonical URI for this record.
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-self.md "undefined#/$definitions/repository/properties/attributes/properties/self")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-self.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/self")
 
 ### self Type
 
@@ -78,7 +78,7 @@ The owning entity of the repository - usually an organization or a user.
 -   is required
 -   Type: `object` ([Details](records-definitions-repository-properties-attributes-properties-owner.md))
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-owner.md "undefined#/$definitions/repository/properties/attributes/properties/owner")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-owner.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner")
 
 ### owner Type
 
@@ -94,7 +94,7 @@ The name of the repository
 -   is required
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-name.md "undefined#/$definitions/repository/properties/attributes/properties/name")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-name.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/name")
 
 ### name Type
 
@@ -110,7 +110,7 @@ The URL of this repository on the web
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-htmlurl.md "undefined#/$definitions/repository/properties/attributes/properties/htmlUrl")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-htmlurl.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/htmlUrl")
 
 ### htmlUrl Type
 
@@ -130,7 +130,7 @@ The default branch of this repository
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-defaultbranch.md "undefined#/$definitions/repository/properties/attributes/properties/defaultBranch")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-defaultbranch.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/defaultBranch")
 
 ### defaultBranch Type
 
@@ -154,7 +154,7 @@ Languages used in this array
 -   is optional
 -   Type: `string[]`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-languages.md "undefined#/$definitions/repository/properties/attributes/properties/languages")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-languages.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/languages")
 
 ### languages Type
 
@@ -170,7 +170,7 @@ A flag to mark this repository as a fork
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-fork.md "undefined#/$definitions/repository/properties/attributes/properties/fork")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-fork.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/fork")
 
 ### fork Type
 
@@ -186,7 +186,7 @@ A flag to mark this repository as private (if false, that indicates the reposito
 -   is optional
 -   Type: `boolean`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-private.md "undefined#/$definitions/repository/properties/attributes/properties/private")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-private.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/private")
 
 ### private Type
 
@@ -202,7 +202,7 @@ The time this repository was created
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-createdat.md "undefined#/$definitions/repository/properties/attributes/properties/createdAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-createdat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/createdAt")
 
 ### createdAt Type
 
@@ -222,7 +222,7 @@ The time this repository was updated
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-updatedat.md "undefined#/$definitions/repository/properties/attributes/properties/updatedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-updatedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/updatedAt")
 
 ### updatedAt Type
 
@@ -242,7 +242,7 @@ The time this repository was deleted
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-repository-properties-attributes-properties-deletedat.md "undefined#/$definitions/repository/properties/attributes/properties/deletedAt")
+-   defined in: [Code Climate Platform Schema](records-definitions-repository-properties-attributes-properties-deletedat.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/deletedAt")
 
 ### deletedAt Type
 

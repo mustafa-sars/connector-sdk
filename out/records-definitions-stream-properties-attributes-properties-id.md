@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/stream/properties/attributes/properties/id
+https://platform.codeclimate.com/schemas/records/stream#/$definitions/stream/properties/attributes/properties/id
 ```
 
 An ID for this stream. Should be unique within the context of this connector for a given configuration.

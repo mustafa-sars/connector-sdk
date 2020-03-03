@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/coverageTotals/properties/attributes/properties/commitOid
+https://platform.codeclimate.com/schemas/records#/$definitions/coverageTotals/properties/attributes/properties/commitOid
 ```
 
 The commit oid this test coverage is for.

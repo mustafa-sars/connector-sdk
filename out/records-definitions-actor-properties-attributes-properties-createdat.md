@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/actor/properties/attributes/properties/createdAt
+https://platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes/properties/createdAt
 ```
 
 The time actor repository was created

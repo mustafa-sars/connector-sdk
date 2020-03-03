@@ -1,7 +1,7 @@
-# Untitled string in undefined Schema
+# Untitled string in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/repository/properties/attributes/properties/owner/properties/htmlUrl
+https://platform.codeclimate.com/schemas/records#/$definitions/repository/properties/attributes/properties/owner/properties/htmlUrl
 ```
 
 A web URL for this owner.

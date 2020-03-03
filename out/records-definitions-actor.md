@@ -1,7 +1,7 @@
-# Untitled object in undefined Schema
+# Untitled object in Code Climate Platform Schema Schema
 
 ```txt
-undefined#/$definitions/actor
+https://platform.codeclimate.com/schemas/records#/$definitions/actor
 ```
 
 Actors are human or non-humans that perform actions.
@@ -17,11 +17,11 @@ Actors are human or non-humans that perform actions.
 
 # undefined Properties
 
-| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                  |
-| :------------------------ | ------------- | -------- | -------------- | :-------------------------------------------------------------------------------------------------------------------------- |
-| [type](#type)             | `string`      | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-type.md "undefined#/$definitions/actor/properties/type")             |
-| [attributes](#attributes) | `object`      | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-attributes.md "undefined#/$definitions/actor/properties/attributes") |
-| [required](#required)     | Not specified | Optional | cannot be null | [Untitled schema](records-definitions-actor-properties-required.md "undefined#/$definitions/actor/properties/required")     |
+| Property                  | Type          | Required | Nullable       | Defined by                                                                                                                                                                           |
+| :------------------------ | ------------- | -------- | -------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [type](#type)             | `string`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/type")             |
+| [attributes](#attributes) | `object`      | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes") |
+| [required](#required)     | Not specified | Optional | cannot be null | [Code Climate Platform Schema](records-definitions-actor-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/required")     |
 
 ## type
 
@@ -33,7 +33,7 @@ Actors are human or non-humans that perform actions.
 -   is optional
 -   Type: `string`
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-type.md "undefined#/$definitions/actor/properties/type")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-type.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/type")
 
 ### type Type
 
@@ -57,7 +57,7 @@ Actors are human or non-humans that perform actions.
 -   is optional
 -   Type: `object` ([Details](records-definitions-actor-properties-attributes.md))
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-attributes.md "undefined#/$definitions/actor/properties/attributes")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-attributes.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/attributes")
 
 ### attributes Type
 
@@ -73,7 +73,7 @@ Actors are human or non-humans that perform actions.
 -   is optional
 -   Type: unknown
 -   cannot be null
--   defined in: [Untitled schema](records-definitions-actor-properties-required.md "undefined#/$definitions/actor/properties/required")
+-   defined in: [Code Climate Platform Schema](records-definitions-actor-properties-required.md "https&#x3A;//platform.codeclimate.com/schemas/records#/$definitions/actor/properties/required")
 
 ### required Type
 
