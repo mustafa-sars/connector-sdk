@@ -9,8 +9,22 @@
       "oneOf": [
         { "$ref": "#/$definitions/stream" },
         { "$ref": "#/$definitions/actor" },
+        { "$ref": "#/$definitions/group" },
+        { "$ref": "#/$definitions/application" },
+        { "$ref": "#/$definitions/board" },
+        { "$ref": "#/$definitions/branch" },
+        { "$ref": "#/$definitions/build" },
+        { "$ref": "#/$definitions/calendar" },
+        { "$ref": "#/$definitions/calendarEvent" },
+        { "$ref": "#/$definitions/commit" },
+        { "$ref": "#/$definitions/component" },
+        { "$ref": "#/$definitions/dependencyIssue" },
+        { "$ref": "#/$definitions/deployment" },
+        { "$ref": "#/$definitions/environment" },
+        { "$ref": "#/$definitions/featureFlag" },
         { "$ref": "#/$definitions/repository" },
         { "$ref": "#/$definitions/incident" },
+        { "$ref": "#/$definitions/incidentNotification" },
         { "$ref": "#/$definitions/deliveryWorkflow" },
         { "$ref": "#/$definitions/deliveryBuild" },
         { "$ref": "#/$definitions/deliveryJob" },
@@ -128,6 +142,906 @@
             },
             "deletedAt": {
               "description": "The time this actor was deleted",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "group": {
+      "type": "object",
+      "description": "A group of actors.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Group"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this group",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record",
+              "type": "string",
+              "format": "uri"
+            },
+            "name": {
+              "description": "The name of the group",
+              "type": "string"
+            },
+            "description": {
+              "description": "The description of the group",
+              "type": "string"
+            },
+            "members": {
+              "type": "array",
+              "description": "URLs of actors",
+              "items": { "type": "string", "format": "ui" }
+            },
+            "htmlUrl": {
+              "type": "string",
+              "description": "A web URL for this group",
+              "format": "uri"
+            },
+            "createdAt": {
+              "description": "The time the actor group was created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this group was updated",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time this group was deleted",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "application": {
+      "type": "object",
+      "description": "A software program or group of programs delivered to an end user, defined by a set of Components.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Application"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this application",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record",
+              "type": "string",
+              "format": "uri"
+            },
+            "name": {
+              "description": "The name of the application",
+              "type": "string"
+            },
+            "description": {
+              "description": "The description of the application",
+              "type": "string"
+            },
+            "createdAt": {
+              "description": "The time the application was created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this application was updated",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time this application was deleted",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "board": {
+      "type": "object",
+      "description": "Boards depict issues moving across Statuses.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Board"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this board",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record",
+              "type": "string",
+              "format": "uri"
+            },
+            "name": {
+              "description": "The name of the application",
+              "type": "string"
+            },
+            "boardType": {
+              "description": "The type of board",
+              "type": "string",
+              "enum": ["kanban", "scrum", "simple"]
+            },
+            "createdAt": {
+              "description": "The time this the board was created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this board was updated",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time this board was deleted",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "branch": {
+      "type": "object",
+      "description": "Named reference within Repository.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Branch"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "self": {
+              "description": "The canonical URI for this record",
+              "type": "string",
+              "format": "uri"
+            },
+            "name": {
+              "description": "The name of the branch",
+              "type": "string"
+            },
+            "repository": {
+              "description": "The `self` URI of the Repository this branch applies to, or a nested Repository record.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/repository" }
+              ]
+            },
+            "deletedAt": {
+              "description": "The time this branch was deleted",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "build": {
+      "type": "object",
+      "description": "TODO: Build needs a description.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Build"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this build",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record",
+              "type": "string",
+              "format": "uri"
+            },
+            "repository": {
+              "description": "The `self` URI of the Repository this build applies to, or a nested Repository record.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/repository" }
+              ]
+            },
+            "commitOid": {
+              "description": "The oid of the Commit this Build ran on.",
+              "type": "string"
+            },
+            "number": {
+              "description": "The number identifying this build",
+              "type": "integer"
+            },
+            "retry": {
+              "description": "Whether the build is a retry of another",
+              "type": "boolean"
+            },
+            "pullRequestUrl": {
+              "description": "The url of the pull request this build is associated with",
+              "type": "string",
+              "format": "uri"
+            },
+            "branchName": {
+              "description": "The name of the branch the build is associated with",
+              "type": "string"
+            },
+            "lifecycle": {
+              "description": "The various lifecycle states of the build",
+              "type": "string",
+              "enum": ["queued", "scheduled", "running", "finished"]
+            },
+            "outcome": {
+              "description": "The outcome of the build",
+              "type": "string",
+              "enum": ["canceled", "erorred", "timedout", "failed", "success"]
+            },
+            "startedAt": {
+              "description": "The time this build started",
+              "type": "string",
+              "format": "date-time"
+            },
+            "finishedAt": {
+              "description": "The time this build finished",
+              "type": "string",
+              "format": "date-time"
+            },
+            "duration": {
+              "description": "The amount of time the build took ",
+              "type": "integer"
+            }
+          },
+          "required": [ "id", "self", "repository", "commitOid", "lifecycle" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "calendar": {
+      "type": "object",
+      "description": "Calendars are groups of CalendarEvents.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Calendar"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this calendar",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record",
+              "type": "string",
+              "format": "uri"
+            },
+            "title": {
+              "description": "The title of this calendar",
+              "type": "string"
+            },
+            "description": {
+              "description": "The description of this calendar",
+              "type": "integer"
+            },
+            "timeZone": {
+              "description": "The timezone of this calendar",
+              "type": "timezone"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "calendarEvent": {
+      "type": "object",
+      "description": "TODO: better name...CalendarEvents are events in a calendar",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "CalendarEvent"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this calendar event",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record",
+              "type": "string",
+              "format": "uri"
+            },
+            "summary": {
+              "description": "A summary of the calendar event",
+              "type": "string"
+            },
+            "status": {
+              "description": "The status of the calendar event",
+              "type": "string",
+              "enum": ["confirmed", "tentative", "cancelled"]
+            },
+            "description": {
+              "description": "The description of this calendar",
+              "type": "integer"
+            },
+            "location": {
+              "description": "The location of the event",
+              "type": "string"
+            },
+            "visibility": {
+              "description": "The timezone of this calendar",
+              "type": "string",
+              "enum": ["default", "public", "private"]
+            },
+            "start.date": {
+              "description": "For all day events",
+              "type": "date-time"
+            },
+            "start.dateTime": {
+              "description": "For non-all day events",
+              "type": "date-time"
+            },
+            "start.timeZone": {
+              "description": "Timezone for start",
+              "type": "timezone"
+            },
+            "end.date": {
+              "description": "For all day events",
+              "type": "date-time"
+            },
+            "end.dateTime": {
+              "description": "For non-all day events",
+              "type": "date-time"
+            },
+            "end.timeZone": {
+              "description": "Timezone for end",
+              "type": "timezone"
+            },
+            "recurringEvent": {
+              "description": "If event is recurring, URL to the recurring event",
+              "type": "string",
+              "format": "uri"
+            },
+            "attendees": {
+              "description": "Attendees",
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "attendeesOmitted": {
+              "description": "If attendee information was ommitted due to too many attendees",
+              "type": "boolean"
+            }
+          },
+          "required": [ "id", "self", "start.timeZone", "end.timeZone" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "commit": {
+      "type": "object",
+      "description": "A commit.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Commit"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this commit.",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "author": {
+              "description": "The `self` URI of the related Actor, or a nested Actor record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/actor" }
+              ]
+            },
+            "committer": {
+              "description": "The `self` URI of the related Actor, or a nested Actor record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/actor" }
+              ]
+            },
+            "message": {
+              "description": "The commit message.",
+              "type": "string"
+            },
+            "tree": {
+              "description": "The commit tree.",
+              "type": "string"
+            },
+            "parents": {
+              "description": "The canonical URI for this record.",
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "statistics": {
+              "description": "Commit statistics.",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "description": "The id of the statistics.",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "What type of statistic this is.",
+                  "type": "string"
+                },
+                "additions": {
+                  "description": "Lines of code added in this commit.",
+                  "type": "integer"
+                },
+                "deletions": {
+                  "description": "Lines of code deleted in this commit.",
+                  "type": "integer"
+                },
+                "total": {
+                  "description": "Total lines of code in this commit.",
+                  "type": "integer"
+                }
+              },
+              "required": [ "id", "type" ]
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "commitCheck": {
+      "type": "object",
+      "description": "A status rendered on a Commit, e.g. from a CI/CD or code quality tool.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "CommitCheck"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this CommitCheck.",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "avatarUrl": {
+              "description": "An avatar for this owner.",
+              "type": "string",
+              "format": "uri"
+            },
+            "commitOid": {
+              "description": "The oid of the Commit associated with this CommitCheck, if present.",
+              "type": "string"
+            },
+            "context": {
+              "description": "The context of the CommitCheck",
+              "type": "string"
+            },
+            "state": {
+              "description": "The state of the CommitCheck",
+              "type": "string"
+            },
+            "description": {
+              "description": "The description of this commit check",
+              "type": "integer"
+            },
+            "createdAt": {
+              "description": "The time the commit check was created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "creator": {
+              "description": "The `self` URI of the related Actor, or a nested Actor record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/actor" }
+              ]
+            },
+            "targetUrl": {
+              "description": "Target url.",
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [ "id", "self", "commitOid", "context", "state" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "component": {
+      "type": "object",
+      "description": "Components are conceptual units of software, defined as a set of source files, which are composed into Applications. A Component might correspond directly with a Repository, consist of a subset of files within a monorepo, or be comprised of the union set of files spread across multiple repositories.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Component"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this Component.",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "name": {
+              "description": "The component's name.",
+              "type": "string"
+            },
+            "description": {
+              "description": "The component's description.",
+              "type": "string"
+            },
+            "files": {
+              "description": "Files associated with a component",
+              "type": "array",
+              "items": { 
+                "type": "object", 
+                "properties": {
+                  "repository": {
+                    "description": "The `self` URI of the Repository this file applies to, or a nested Repository record.",
+                    "oneOf": [
+                      { "type": "string", "format": "uri" },
+                      { "$ref": "#/$definitions/repository" }
+                    ]
+                  },
+                  "pattern": {
+                    "description": "The file's pattern.",
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "createdAt": {
+              "description": "The time this component was created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this component was updated",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time this component was deleted",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "dependencyIssue": {
+      "type": "object",
+      "description": "An issue with a dependency, such as a security vulnerability or a licensing issue.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "DependencyIssue"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this Dependency Issue.",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "title": {
+              "description": "The title of this Dependency Issue.",
+              "type": "string"
+            },
+            "message": {
+              "description": "The Dependency Issue message.",
+              "type": "string"
+            },
+            "fingerprint": {
+              "description": "TODO: Fingerprint",
+              "type": "string"
+            },
+            "status": {
+              "description": "The status of the Dependency Issue",
+              "type": "string"
+            },
+            "statusDetails": {
+              "description": "The details of the Dependency Issue's status",
+              "type": "string"
+            },
+            "statusUpdatedAt": {
+              "description": "The time the status was updated at",
+              "type": "string",
+              "format": "date-time"
+            },
+            "statusUpdatedBy": {
+              "description": "TODO: StatusUpdatedBy",
+              "type": "string"
+            },
+            "rawDetails": {
+              "description": "TODO",
+              "type": "string"
+            },
+            "htmlUrl": {
+              "description": "A URL for this Dependency Issue.",
+              "type": "string",
+              "format": "uri"
+            },
+            "createdAt": {
+              "description": "The time this component was created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this component was updated",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time this component was deleted",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "deployment": {
+      "type": "object",
+      "description": "Deployments push changes to a runtime Evironment.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Deployment"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this Deployment.",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "environment": {
+              "description": "The `self` URI of the related Environment, or a nested Environment record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/environment" }
+              ]
+            },
+            "originalEnvironment": {
+              "description": "The `self` URI of the related staging Environment if promoting to production, or a nested Environment record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/environment" }
+              ]
+            },
+            "commitOid": {
+              "description": "The oid of the Commit this Build ran on, if present.",
+              "type": "string"
+            },
+            "branch": {
+              "description": "The name of the branch this Deployment is associated with, if present.",
+              "type": "string"
+            },
+            "version": {
+              "description": "TODO: string or int? The deployment version",
+              "type": "string"
+            },
+            "packages": {
+              "description": "TODO: Packages",
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "creator": {
+              "description": "The `self` URI of the related Actor, or a nested Actor record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/actor" }
+              ]
+            },
+            "htmlUrl": {
+              "description": "The URL to view this deployment.",
+              "type": "string",
+              "format": "uri"
+            },
+            "statusUrl": {
+              "description": "The URL to view the status of this deployment.",
+              "type": "string",
+              "format": "uri"
+            },
+            "createdAt": {
+              "description": "The time this build was created.",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "environment": {
+      "type": "object",
+      "description": "Represents a running instance of an Application, like production or staging.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Environment"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this Environment.",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "name": {
+              "description": "The name of the environment.",
+              "type": "string"
+            },
+            "description": {
+              "description": "The description of the environment.",
+              "type": "string"
+            },
+            "transient": {
+              "description": "Whether the environment is transient.",
+              "type": "boolean"
+            },
+            "production": {
+              "description": "Whether the environment is production.",
+              "type": "boolean"
+            },
+            "htmlUrl": {
+              "description": "The URL to view this environment.",
+              "type": "string",
+              "format": "uri"
+            },
+            "createdAt": {
+              "description": "The time this environment was created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this environment was updated",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time this environment was deleted",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "featureFlag": {
+      "type": "object",
+      "description": "FeatureFlags allow changes to be gradually rolled out to an Environment after a Deployment.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "FeatureFlag"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this Environment.",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "name": {
+              "description": "The name of the FeatureFlag.",
+              "type": "string"
+            },
+            "kind": {
+              "description": "The kind of FeatureFlag.",
+              "type": "string"
+            },
+            "key": {
+              "description": "The FeatureFlag key.",
+              "type": "string"
+            },
+            "temporary": {
+              "description": "Whether the FeatureFlag is temporary.",
+              "type": "boolean"
+            },
+            "maintainer": {
+              "description": "The `self` URI of the related Actor, or a nested Actor record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/actor" }
+              ]
+            },
+            "htmlUrl": {
+              "description": "The URL to view this environment.",
+              "type": "string",
+              "format": "uri"
+            },
+            "createdAt": {
+              "description": "The time this FeatureFlag was created",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this FeatureFlag was updated",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time this FeatureFlag was deleted",
               "type": "string",
               "format": "date-time"
             }
@@ -290,6 +1204,65 @@
           },
           "required": [
             "id", "self", "title", "htmlUrl", "number", "status", "createdAt"
+          ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "incidentNotification": {
+      "type": "object",
+      "description": "IncidentNotifications are a 'page' that results from an incident being triggered or escalated.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "Incident"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "The unique ID of this incidentNotification from the incident response platform",
+              "type": "string"
+            },
+            "self": {
+              "description": "The canonical URI for this record",
+              "type": "string",
+              "format": "uri"
+            },
+            "incident": {
+              "description": "The `self` URI of the related Incident, or a nested Incident record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/incident" }
+              ]
+            },
+            "recipient": {
+              "description": "The recepient of the incident notification",
+              "type": "string"
+            },
+            "kind": {
+              "description": "The kind of incident notification.",
+              "type": "string",
+              "enum": ["phone", "email", "text", "push"]
+            },
+            "createdAt": {
+              "description": "The time this incident notification began.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this incident notification was last updated.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time this incident notification was deleted.",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [
+            "id", "self", "incident", "kind", "createdAt"
           ]
         },
         "required":  ["type", "attributes"]
