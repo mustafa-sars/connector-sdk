@@ -370,14 +370,18 @@
               "type": "integer"
             },
             "workflow": {
-              "description": "The `self` URI of the related Workflow, if it exists.",
-              "type": "string",
-              "format": "uri"
+              "description": "The `self` URI of the related Workflow, or a nested Workflow record, if it exists.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/deliveryWorkflow" }
+              ]
             },
             "repository": {
-              "description": "The `self` URI of the related Repository, if it exists.",
-              "type": "string",
-              "format": "uri"
+              "description": "The `self` URI of the Repository this Build ran for, or a nested Repository record.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/repository" }
+              ]
             },
             "state": {
               "description": "The state of the Build.",
@@ -509,14 +513,18 @@
               "format": "uri"
             },
             "build": {
-              "description": "The `self` URI of the related Build.",
-              "type": "string",
-              "format": "uri"
+              "description": "The `self` URI of the related Build, or a nested Build record.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/deliveryBuild" }
+              ]
             },
             "job": {
-              "description": "The `self` URI of the related Job.",
-              "type": "string",
-              "format": "uri"
+              "description": "The `self` URI of the related Job, or a nested Job record.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/deliveryJob" }
+              ]
             },
             "totalTests": {
               "description": "The total number of tests run",
@@ -553,14 +561,18 @@
               "format": "uri"
             },
             "build": {
-              "description": "The `self` URI of the related Build.",
-              "type": "string",
-              "format": "uri"
+              "description": "The `self` URI of the related Build, or a nested Build record.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/deliveryBuild" }
+              ]
             },
             "job": {
-              "description": "The `self` URI of the related Job.",
-              "type": "string",
-              "format": "uri"
+              "description": "The `self` URI of the related Job, or a nested Job record.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/deliveryJob" }
+              ]
             },
             "state": {
               "description": "The state of the test result",
@@ -622,9 +634,11 @@
               "format": "uri"
             },
             "repository": {
-              "description": "The `self` URI of the Repository this test coverage applies to.",
-              "type": "string",
-              "format": "uri"
+              "description": "The `self` URI of the Repository this test coverage applies to, or a nested Repository record.",
+              "oneOf": [
+                { "type": "string", "format": "uri" },
+                { "$ref": "#/$definitions/repository" }
+              ]
             },
             "commitOid": {
               "description": "The commit oid this test coverage is for.",
@@ -687,7 +701,7 @@
               "format": "date-time"
             }
           },
-          "required": [ "id", "self", "repository", "commitOid", "coverage" ]
+          "required": ["self", "repository", "commitOid", "coverage"]
         },
         "required":  ["type", "attributes"]
       }
@@ -709,9 +723,11 @@
               "format": "uri"
             },
             "repository": {
-              "description": "The `self` URI of the Repository this test coverage applies to.",
-              "type": "string",
-              "format": "uri"
+              "description": "The `self` URI of the Repository this test coverage applies to, or a nested Repository record.",
+              "oneOf": [
+                { "$ref": "#/$definitions/repository" },
+                { "type": "string", "format": "uri" }
+              ]
             },
             "commitOid": {
               "description": "The commit oid this test coverage is for.",
@@ -725,7 +741,7 @@
               "description": "The number of hits on each line in the file, starting with line 1. An entry for every line should be present.",
               "type": "array",
               "items": {
-                "$oneOf": [
+                "oneOf": [
                   { "type": "integer" },
                   { "type": "null" }
                 ]
@@ -757,7 +773,7 @@
               "format": "date-time"
             }
           },
-          "required": [ "id", "self", "repository", "commitOid", "lineHits" ]
+          "required": ["self", "repository", "commitOid", "lineHits"]
         },
         "required":  ["type", "attributes"]
       }

@@ -63,8 +63,14 @@ export class RecordValidator {
     return this._ajv
   }
 
+  // record types are FooBar, keys in the json schema defs are fooBar
+  private get recordTypeLowerCamel(): string {
+    const t = this.record["type"] || "MissingType"
+    return `${t[0].toLowerCase()}${t.slice(1)}`
+  }
+
   private get recordSchemaRef(): string {
-    return `records#/$definitions/${this.record["type"].toLowerCase()}`
+    return `records#/$definitions/${this.recordTypeLowerCamel}`
   }
 
   private get isValidType(): boolean {
