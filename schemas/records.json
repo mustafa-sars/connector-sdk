@@ -13,7 +13,8 @@
         { "$ref": "#/$definitions/deliveryBuild" },
         { "$ref": "#/$definitions/deliveryJob" },
         { "$ref": "#/$definitions/testResult" },
-        { "$ref": "#/$definitions/testCoverage" }
+        { "$ref": "#/$definitions/coverageTotals" },
+        { "$ref": "#/$definitions/fileCoverage" }
       ],
       "required": ["type"]
     },
@@ -379,7 +380,7 @@
               "type": "string",
               "enum": ["created", "running", "errored", "complete"]
             },
-            "oid": {
+            "commitOid": {
               "description": "The oid of the Commit this Build ran on, if present.",
               "type": "string"
             },
@@ -413,7 +414,7 @@
               "format": "date-time"
             }
           },
-          "required": [ "id", "self", "repository", "state" ]
+          "required": [ "id", "self", "repository", "state", "commitOid" ]
         },
         "required":  ["type", "attributes"]
       }
@@ -556,21 +557,17 @@
         "required":  ["type", "attributes"]
       }
     },
-    "testCoverage": {
+    "coverageTotals": {
       "type": "object",
-      "description": "Information about test coverage of code.",
+      "description": "Information about test coverage of a commit.",
       "properties": {
         "type": {
           "type": "string",
-          "const": "TestCoverage"
+          "const": "CoverageTotals"
         },
         "attributes": {
           "type": "object",
           "properties": {
-            "id": {
-              "description": "The unique ID of this test coverage record.",
-              "type": "string"
-            },
             "self": {
               "description": "The canonical URI for this record.",
               "type": "string",
@@ -581,12 +578,8 @@
               "type": "string",
               "format": "uri"
             },
-            "oid": {
+            "commitOid": {
               "description": "The commit oid this test coverage is for.",
-              "type": "string"
-            },
-            "file": {
-              "description": "The file path this coverage applies to. If not set, this coverage is interpreted as applying to the entire Repository.",
               "type": "string"
             },
             "coverage": {
@@ -646,7 +639,77 @@
               "format": "date-time"
             }
           },
-          "required": [ "id", "self", "repository", "oid", "coverage" ]
+          "required": [ "id", "self", "repository", "commitOid", "coverage" ]
+        },
+        "required":  ["type", "attributes"]
+      }
+    },
+    "fileCoverage": {
+      "type": "object",
+      "description": "Information about test coverage of a file within a commit.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "FileCoverage"
+        },
+        "attributes": {
+          "type": "object",
+          "properties": {
+            "self": {
+              "description": "The canonical URI for this record.",
+              "type": "string",
+              "format": "uri"
+            },
+            "repository": {
+              "description": "The `self` URI of the Repository this test coverage applies to.",
+              "type": "string",
+              "format": "uri"
+            },
+            "commitOid": {
+              "description": "The commit oid this test coverage is for.",
+              "type": "string"
+            },
+            "file": {
+              "description": "The path of the file for these test results.",
+              "type": "string"
+            },
+            "lineHits": {
+              "description": "The number of hits on each line in the file, starting with line 1. An entry for every line should be present.",
+              "type": "array",
+              "items": {
+                "$oneOf": [
+                  { "type": "integer" },
+                  { "type": "null" }
+                ]
+              }
+            },
+            "filesCount": {
+              "description": "The number of files.",
+              "type": "integer",
+              "minimum": 0
+            },
+            "htmlUrl": {
+              "description": "The URL to view this coverage.",
+              "type": "string",
+              "format": "uri"
+            },
+            "createdAt": {
+              "description": "The time this coverage was created.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "updatedAt": {
+              "description": "The time this coverage was last updated.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "deletedAt": {
+              "description": "The time coverage was deleted.",
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          "required": [ "id", "self", "repository", "commitOid", "lineHits" ]
         },
         "required":  ["type", "attributes"]
       }
