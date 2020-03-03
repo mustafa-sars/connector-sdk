@@ -2,26 +2,26 @@ import { readFileSync } from "fs";
 
 import { AbstractCommand } from "../Command"
 import { ClientConfiguration, ClientInterface } from "../../Client"
-import { CollectorLoader } from "../CollectorLoader"
+import { ConnectorLoader } from "../ConnectorLoader"
 
 export default class VerifyConfiguration extends AbstractCommand {
   static help() {
     process.stdout.write(
       [
-        "Code Climate Collector CLI",
+        "Code Climate Connector CLI",
         "",
-        "Usage: codeclimate-collector verify-configuration <collector> <config-path>",
+        "Usage: codeclimate-connector verify-configuration <connector> <config-path>",
         "",
-        "Verifies a collector's configuration.",
+        "Verifies a connector's configuration.",
         "",
         "Arguments:",
-        "\tcollector\tThe slug of the collector to run. E.g. if the collector is for PagerDuty and comes from the package codeclimate-collector-pagerduty, the slug is \"pagerduty\".",
-        "\tconfig-path\tA path to a JSON file to parse and use as configuration for the collector.",
+        "\tconnector\tThe slug of the connector to run. E.g. if the connector is for PagerDuty and comes from the package codeclimate-connector-pagerduty, the slug is \"pagerduty\".",
+        "\tconfig-path\tA path to a JSON file to parse and use as configuration for the connector.",
       ].join("\n") + "\n"
     )
   }
 
-  get collectorSlug(): string {
+  get connectorSlug(): string {
     return this.yargs["_"][0] || ""
   }
 
@@ -44,8 +44,8 @@ export default class VerifyConfiguration extends AbstractCommand {
   }
 
   private buildClient(): ClientInterface {
-    return new CollectorLoader(
-      this.collectorSlug,
+    return new ConnectorLoader(
+      this.connectorSlug,
       this.clientConfiguration,
       this.logger,
     ).buildClient()

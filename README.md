@@ -1,8 +1,8 @@
-# Code Climate Collector SDK
+# Code Climate Connector SDK
 
-The SDK for building Code Climate Collectors. This package provides code for
-collectors to use in their implementations, and a CLI to help with developing
-collectors.
+The SDK for building Code Climate Connectors. This package provides code for
+connectors to use in their implementations, and a CLI to help with developing
+connectors.
 
 ## Development
 
@@ -12,19 +12,19 @@ about working on this package.
 
 ## CLI
 
-From within a collector package that depends on this package, run `yarn
-codeclimate-collector` to run the CLI.
+From within a connectors package that depends on this package, run `yarn
+codeclimate-connectors` to run the CLI.
 
-### Running a collector
+### Running a connector
 
-The CLI can be used to run collectors locally during development to verify
-behavior. The following commands are currently supported:
+The CLI can be used to run connectors locally during development to verify
+behavior. To get started, use the CLI's `help` functionality:
 
 ```
-verify-configuration <collector> <config-path>                               Verify a collector's configuration
-sync-stream <collector> <config-path> <stream-id> <earliest-data-cutoff>     Run a sync-stream process for a collector
+yarn run codeclimate-connector help  # See general help
+yarn run codeclimate-connector sync-stream --help  # Help for a specific command
 ```
 
-## Creating a new collector
+## Creating a new connector
 
-See https://github.com/codeclimate/create-codeclimate-collector.
+See https://github.com/codeclimate/create-codeclimate-connector.

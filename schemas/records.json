@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Schema for Code Climate Collector records",
+  "description": "Schema for Code Climate Connector records",
   "$ref": "#/$definitions/record",
   "$definitions": {
     "record": {
@@ -31,7 +31,7 @@
           "properties": {
             "id": {
               "type": "string",
-              "description": "An ID for this stream. Should be unique within the context of this collector for a given configuration."
+              "description": "An ID for this stream. Should be unique within the context of this connector for a given configuration."
             },
             "self": {
               "description": "The canonical URL for this stream",

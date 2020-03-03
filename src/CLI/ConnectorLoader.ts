@@ -7,8 +7,8 @@ import { Logger } from "../Logger"
 import { RecordProducer, RecordProducerFacade } from "../RecordProducer"
 import { State, StateManager } from "../StateManager"
 
-export class CollectorLoader {
-  constructor(public collectorSlug: string, public clientConfiguration: ClientConfiguration, public logger: Logger) {
+export class ConnectorLoader {
+  constructor(public connectorSlug: string, public clientConfiguration: ClientConfiguration, public logger: Logger) {
   }
 
   public buildClient(): ClientInterface {
@@ -18,7 +18,7 @@ export class CollectorLoader {
       this.clientConfiguration,
       this.buildRecordProducer(),
       this.buildStateManager(),
-      this.logger.taggedChild([this.collectorSlug]),
+      this.logger.taggedChild([this.connectorSlug]),
     )
   }
 
@@ -49,10 +49,10 @@ export class CollectorLoader {
   // cannot typically `require("foo")`.
   // So we naively try to require the given library (so this can be run from
   // like a global install), but for the case where this is being run within a
-  // collector's project directory, we look for a `package.json`, resolve the
+  // connector's project directory, we look for a `package.json`, resolve the
   // appropriate include to an absolute path, and require that.
   private requiredClientLib(): { Client: any } {
-    const packageName = `codeclimate-collector-${this.collectorSlug}`
+    const packageName = `codeclimate-connector-${this.connectorSlug}`
     try {
       return require(packageName)
     } catch(ex) {

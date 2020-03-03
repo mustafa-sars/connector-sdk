@@ -2,29 +2,29 @@ import { readFileSync } from "fs";
 
 import { AbstractCommand } from "../Command"
 import { ClientConfiguration, ClientInterface } from "../../Client"
-import { CollectorLoader } from "../CollectorLoader"
+import { ConnectorLoader } from "../ConnectorLoader"
 import { Stream } from "../../Stream"
 
 export default class SyncStream extends AbstractCommand {
   static help() {
     process.stdout.write(
       [
-        "Code Climate Collector CLI",
+        "Code Climate Connector CLI",
         "",
-        "Usage: codeclimate-collector sync-stream <collector> <config-path> <stream> <earliest-data-cutoff>",
+        "Usage: codeclimate-connector sync-stream <connector> <config-path> <stream> <earliest-data-cutoff>",
         "",
-        "Runs a sync process in a collector for a given stream.",
+        "Runs a sync process in a connector for a given stream.",
         "",
         "Arguments:",
-        "\tcollector\tThe slug of the collector to run. E.g. if the collector is for PagerDuty and comes from the package codeclimate-collector-pagerduty, the slug is \"pagerduty\".",
-        "\tconfig-path\tA path to a JSON file to parse and use as configuration for the collector.",
-        "\tstream\parseable JSON string representing the stream to sync. Some collectors may ignore this value, and in that case you can pass \"null\".",
+        "\tconnector\tThe slug of the connector to run. E.g. if the connector is for PagerDuty and comes from the package codeclimate-connector-pagerduty, the slug is \"pagerduty\".",
+        "\tconfig-path\tA path to a JSON file to parse and use as configuration for the connector.",
+        "\tstream\parseable JSON string representing the stream to sync. Some connector may ignore this value, and in that case you can pass \"null\".",
         "\tearliest-data-cutoff\tHow far back in time the sync process should go. Should be iso8601 format.",
       ].join("\n") + "\n"
     )
   }
 
-  get collectorSlug(): string {
+  get connectorSlug(): string {
     return this.yargs["_"][0] || ""
   }
 
@@ -64,8 +64,8 @@ export default class SyncStream extends AbstractCommand {
   }
 
   private buildClient(): ClientInterface {
-    return new CollectorLoader(
-      this.collectorSlug,
+    return new ConnectorLoader(
+      this.connectorSlug,
       this.clientConfiguration,
       this.logger,
     ).buildClient()

@@ -8,17 +8,17 @@ export default class Help extends AbstractCommand {
   static help() {
     process.stdout.write(
       [
-        "Code Climate Collector CLI",
+        "Code Climate Connector CLI",
         "",
-        "Usage: codeclimate-collector COMMAND ...",
+        "Usage: codeclimate-connector COMMAND ...",
         "",
         "Available commands:",
         "\thelp\tShow this message",
-        "\tverify-configuration <collector> <config-path>\tVerify a collector's configuration",
-        "\tdiscover-streams <collector> <config-path>\tDiscover streams available for a collector",
-        "\tsync-stream <collector> <config-path> <stream-id> <earliest-data-cutoff>\tRun a sync-stream process for a collector",
+        "\tverify-configuration <connector> <config-path>\tVerify a connector's configuration",
+        "\tdiscover-streams <connector> <config-path>\tDiscover streams available for a connector",
+        "\tsync-stream <connector> <config-path> <stream-id> <earliest-data-cutoff>\tRun a sync-stream process for a connector",
         "",
-        "Run `codeclimate-collector COMMAND --help` for command-specific help.",
+        "Run `codeclimate-connector COMMAND --help` for command-specific help.",
         "",
         "Globally recognized flags:",
         "\t-v, --verbose\tMore verbose logging",
