@@ -17,5 +17,5 @@ merged type ([Details](filecoverage-properties-repository.md))
 
 one (and only one) of
 
--   [Repository](coveragetotals-properties-repository-oneof-repository.md "check type definition")
+-   [Repository](branch-properties-repository-oneof-repository.md "check type definition")
 -   [Untitled string in FileCoverage](filecoverage-properties-repository-oneof-1.md "check type definition")

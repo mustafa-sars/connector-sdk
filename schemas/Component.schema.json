@@ -27,26 +27,6 @@
       "description": "The component's description.",
       "type": "string"
     },
-    "files": {
-      "description": "Files associated with a component",
-      "type": "array",
-      "items": { 
-        "type": "object", 
-        "properties": {
-          "repository": {
-            "description": "The `self` URI of the Repository this Component applies to, or a nested Repository record.",
-            "oneOf": [
-              { "$ref": "https://platform.codeclimate.com/schemas/repository" },
-              { "type": "string", "format": "uri" }
-            ]
-          },
-          "pattern": {
-            "description": "Pattern of files located in a Repository.",
-            "type": "string"
-          }
-        }
-      }
-    },
     "createdAt": {
       "description": "The time this component was created",
       "type": "string",

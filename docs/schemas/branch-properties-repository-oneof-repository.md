@@ -1,19 +1,19 @@
 # Repository Schema
 
 ```txt
-https://platform.codeclimate.com/schemas/repository#/properties/repository/oneOf/1
+https://platform.codeclimate.com/schemas/repository#/properties/repository/oneOf/0
 ```
 
 A code repository.
 
 
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
-| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ----------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [CoverageTotals.schema.json\*](../../schemas/CoverageTotals.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                      |
+| :------------------ | ---------- | -------------- | ------------ | :---------------- | --------------------- | ------------------- | ------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [Branch.schema.json\*](../../schemas/Branch.schema.json "open original schema") |
 
-## 1 Type
+## 0 Type
 
-`object` ([Repository](coveragetotals-properties-repository-oneof-repository.md))
+`object` ([Repository](branch-properties-repository-oneof-repository.md))
 
 # Repository Properties
 

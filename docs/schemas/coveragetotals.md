@@ -98,7 +98,7 @@ merged type ([Details](coveragetotals-properties-repository.md))
 one (and only one) of
 
 -   [Untitled string in CoverageTotals](coveragetotals-properties-repository-oneof-0.md "check type definition")
--   [Repository](coveragetotals-properties-repository-oneof-repository.md "check type definition")
+-   [Repository](branch-properties-repository-oneof-repository.md "check type definition")
 
 ## commitOid
 

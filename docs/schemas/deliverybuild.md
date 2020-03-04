@@ -150,7 +150,7 @@ merged type ([Details](deliverybuild-properties-repository.md))
 one (and only one) of
 
 -   [Untitled string in DeliveryBuild](deliverybuild-properties-repository-oneof-0.md "check type definition")
--   [Repository](coveragetotals-properties-repository-oneof-repository.md "check type definition")
+-   [Repository](branch-properties-repository-oneof-repository.md "check type definition")
 
 ## state
 
