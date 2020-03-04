@@ -13,37 +13,36 @@
     "id": {
       "description": "The unique ID of this board",
        "type": "string"
-     },
-     "self": {
-       "description": "The canonical URI for this record",
-       "type": "string",
-       "format": "uri"
-     },
-     "name": {
-       "description": "The name of the application",
-       "type": "string"
-     },
-     "boardType": {
-       "description": "The type of board",
-       "type": "string",
-       "enum": ["kanban", "scrum", "simple"]
-     },
-     "createdAt": {
-       "description": "The time this the board was created",
-       "type": "string",
-       "format": "date-time"
-     },
-     "updatedAt": {
-       "description": "The time this board was updated",
-       "type": "string",
-       "format": "date-time"
-     },
-     "deletedAt": {
-       "description": "The time this board was deleted",
-       "type": "string",
-       "format": "date-time"
-     }
-   },
-   "required": [ "_type", "id", "self", "name", "boardType" ]
- }
+    },
+    "self": {
+      "description": "The canonical URI for this record",
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "description": "The name of the application",
+      "type": "string"
+    },
+    "boardType": {
+      "description": "The type of board",
+      "type": "string",
+      "enum": ["kanban", "scrum", "simple"]
+    },
+    "createdAt": {
+      "description": "The time this the board was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "description": "The time this board was updated",
+      "type": "string",
+      "format": "date-time"
+    },
+    "deletedAt": {
+      "description": "The time this board was deleted",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [ "_type", "id", "self", "name", "boardType" ]
 }
