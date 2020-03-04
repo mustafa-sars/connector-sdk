@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://platform.codeclimate.com/schemas/deployment",
+  "type": "object",
+  "additonalProperties": false,
+  "title": "Deployment",
+  "description": "Deployments push changes to a runtime Evironment.",
+  "properties": {
+    "_type": {
+      "type": "string",
+      "const": "Deployment"
+    },
+    "id": {
+      "description": "The unique ID of this Deployment.",
+      "type": "string"
+    },
+    "self": {
+      "description": "The canonical URI for this record.",
+      "type": "string",
+      "format": "uri"
+    },
+    "environment": {
+      "description": "The `self` URI of the related Environment, or a nested Environment record, if it exists.",
+      "oneOf": [
+        { "$ref": "https://platform.codeclimate.com/schemas/environment" },
+        { "type": "string", "format": "uri" }
+      ]
+    },
+    "originalEnvironment": {
+      "description": "The `self` URI of the related staging Environment if promoting to production, or a nested Environment record, if it exists.",
+      "oneOf": [
+        { "$ref": "https://platform.codeclimate.com/schemas/environment" },
+        { "type": "string", "format": "uri" }
+      ]
+    },
+    "commitOid": {
+      "description": "The oid of the Commit this Build ran on, if present.",
+      "type": "string"
+    },
+    "branch": {
+      "description": "The name of the branch this Deployment is associated with, if present.",
+      "type": "string"
+    },
+    "version": {
+      "description": "TODO: string or int? The deployment version",
+      "type": "string"
+    },
+    "packages": {
+      "description": "TODO: Packages",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "creator": {
+      "description": "The `self` URI of the Actor this test commit to, or a nested Actor record.",
+      "oneOf": [
+        { "$ref": "https://platform.codeclimate.com/schemas/actor" },
+        { "type": "string", "format": "uri" }
+      ]
+    },
+    "htmlUrl": {
+      "description": "The URL to view this deployment.",
+      "type": "string",
+      "format": "uri"
+    },
+    "statusUrl": {
+      "description": "The URL to view the status of this deployment.",
+      "type": "string",
+      "format": "uri"
+    },
+    "createdAt": {
+      "description": "The time this build was created.",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [ "_type", "id", "self" ]
+}

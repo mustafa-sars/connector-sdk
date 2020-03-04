@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://platform.codeclimate.com/schemas/package-dependency",
+  "type": "object",
+  "additonalProperties": false,
+  "title": "PackageDependency",
+  "description": "TODO: is that what this is? The connector PackageDependency",
+  "properties": {
+    "_type": {
+      "type": "string",
+      "const": "PackageDependency"
+    },
+    "id": {
+      "description": "The unique ID of this PackageDependency",
+      "type": "string"
+    },
+    "self": {
+      "description": "The canonical URI for this record",
+      "type": "string",
+      "format": "uri"
+    },
+    "package": {
+      "description": "The `self` URI of the Package, or a nested Package record.",
+      "oneOf": [
+        { "$ref": "https://platform.codeclimate.com/schemas/package" },
+        { "type": "string", "format": "uri" }
+      ]
+    },
+    "dependency": {
+      "description": "The dependency",
+      "type": "string"
+    },
+    "kind": {
+      "description": "The kind of PackageDependency",
+      "type": "string",
+      "enum": ["development", "production"]
+    },
+    "createdAt": {
+      "description": "The time PackageDependency was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "description": "The time PackageDependency was updated",
+      "type": "string",
+      "format": "date-time"
+    },
+    "deletedAt": {
+      "description": "The time PackageDependency was deleted",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [ "_type", "id", "self" ]
+}

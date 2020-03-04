@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://platform.codeclimate.com/schemas/code-issue",
+  "type": "object",
+  "additonalProperties": false,
+  "title": "CodeIssue",
+  "description": "TODO: change types for a bunch of these...An issue with a source code file, like a bug risk or vulnerability.",
+  "properties": {
+    "_type": {
+      "type": "string",
+      "const": "CodeIssue"
+    },
+    "id": {
+      "description": "The unique ID of this CodeIssue",
+      "type": "string"
+    },
+    "self": {
+      "description": "The canonical URI for this record",
+      "type": "string",
+      "format": "uri"
+    },
+    "checkName": {
+      "description": "The check name of this CodeIssue",
+      "type": "string"
+    },
+    "title": {
+      "description": "The title of this CodeIssue",
+      "type": "string"
+    },
+    "message": {
+      "description": "The message associated with this CodeIssue",
+      "type": "string"
+    },
+    "source": {
+      "description": "The source of this CodeIssue",
+      "type": "string"
+    },
+    "severity": {
+      "description": "The severity of this CodeIssue",
+      "type": "string"
+    },
+    "status": {
+      "description": "The status of this CodeIssue",
+      "type": "string"
+    },
+    "statusDetails": {
+      "description": "The details of the status of this CodeIssue",
+      "type": "string"
+    },
+    "statusUpdatedAt": {
+      "description": "When the status was updated",
+      "type": "string",
+      "format": "date-time"
+    },
+    "statusUpdatedBy": {
+      "description": "The `self` URI of the Actor, or a nested Actor record.",
+      "oneOf": [
+        { "$ref": "https://platform.codeclimate.com/schemas/actor" },
+        { "type": "string", "format": "uri" }
+      ]
+    },
+    "rawDetails": {
+      "description": "The raw details of this CodeIssue",
+      "type": "string"
+    },
+    "path": {
+      "description": "The path to this CodeIssue",
+      "type": "string"
+    },
+    "location": {
+      "description": "Location of the CodeIssue",
+      "type": "object",
+      "properties": {
+        "start": {
+          "description": "Start location of CodeIssue",
+          "type": "string"
+        },
+        "end": {
+          "description": "End location of CodeIssue",
+          "type": "string"
+        }
+      }
+    },
+    "estimatedRemediationMinutes": {
+      "description": "The estimated time it will take to fix the issue",
+      "type": "integer"
+    },
+    "categories": {
+      "description": "CodeIssue categories",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "htmlUrl": {
+      "description": "The URL to view this CodeIssue.",
+      "type": "string",
+      "format": "uri"
+    },
+    "createdAt": {
+      "description": "The time CodeIssue was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "description": "The time CodeIssue was updated",
+      "type": "string",
+      "format": "date-time"
+    },
+    "deletedAt": {
+      "description": "The time CodeIssue was deleted",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [ "_type", "id", "self" ]
+}

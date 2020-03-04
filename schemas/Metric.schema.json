@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://platform.codeclimate.com/schemas/metric",
+  "type": "object",
+  "additonalProperties": false,
+  "title": "Metric",
+  "description": "A series of values relating to an object.",
+  "properties": {
+    "_type": {
+      "type": "string",
+      "const": "Metric"
+    },
+    "id": {
+      "description": "The unique ID of this Metric",
+      "type": "string"
+    },
+    "self": {
+      "description": "The canonical URI for this record",
+      "type": "string",
+      "format": "uri"
+    },
+    "record": {
+      "description": "The record of the Metric",
+      "type": "string"
+    },
+    "key": {
+      "description": "The key of the Metric",
+      "type": "string"
+    },
+    "name": {
+      "description": "The name of the Metric",
+      "type": "string"
+    },
+    "unit": {
+      "description": "The unit of the Metric",
+      "type": "string"
+    },
+    "createdAt": {
+      "description": "The time the Metric was created",
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "description": "The time the Metric was updated",
+      "type": "string",
+      "format": "date-time"
+    },
+    "deletedAt": {
+      "description": "The time the Metric was deleted",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["_type", "id", "self"]
+}
