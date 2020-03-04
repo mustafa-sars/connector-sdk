@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://platform.codeclimate.com/schemas/sprint",
+  "type": "object",
+  "additonalProperties": false,
+  "title": "Sprint",
+  "description": "A request for Sprint of a PullRequest.",
+  "properties": {
+    "_type": {
+      "type": "string",
+      "const": "Sprint"
+    },
+    "id": {
+      "description": "The unique ID of this Sprint",
+      "type": "string"
+    },
+    "self": {
+      "description": "The canonical URI for this record",
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "description": "The name of this Sprint",
+      "type": "string"
+    },
+    "state": {
+      "description": "The state of the Sprint",
+      "type": "string",
+      "enum": ["closed", "active"]
+    },
+    "goal": {
+      "description": "The goal of this Sprint",
+      "type": "string"
+    },
+    "endTime": {
+      "description": "The end time of this Sprint",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "createdAt": {
+      "description": "The time this Sprint was created",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "description": "The time this Sprint was updated",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "completeTime": {
+      "description": "The complete time of this Sprint",
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "board": {
+      "description": "The `self` URI of the Board, or a nested Board record.",
+      "oneOf": [
+        { "$ref": "https://platform.codeclimate.com/schemas/board" },
+        { "type": "string", "format": "uri" }
+      ]
+    }
+  },
+  "required": [ "_type", "id", "self", "name", "state" ]
+}

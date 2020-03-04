@@ -20,7 +20,7 @@
       "format": "uri"
     },
     "author": {
-      "description": "The `self` URI of the Author this test commit to, or a nested Author record.",
+      "description": "The `self` URI of the Author, or a nested Author record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/actor" },
         { "type": "string", "format": "uri" }
