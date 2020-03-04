@@ -4,7 +4,7 @@
   "type": "object",
   "additonalProperties": false,
   "title": "CalendarEvent",
-  "description": "CalendarEvent is an event in Calendar.",
+  "description": "CalendarEvent is an event in a Calendar.",
   "properties": {
     "_type": {
       "type": "string",
@@ -47,15 +47,17 @@
       "properties": {
         "date": {
           "description": "For all day events",
-          "type": "date-time"
+          "type": "string",
+          "format": "date-time"
         },
         "dateTime": {
           "description": "For non-all day events",
-          "type": "date-time"
+          "type": "string",
+          "format": "date-time"
         },
         "timeZone": {
-          "description": "Timezone for start",
-          "type": "timezone"
+          "description": "Timezone for start (formatted as an IANA Time Zone Database name)",
+          "type": "string"
         }
       }
     },
@@ -65,15 +67,17 @@
       "properties": {
         "date": {
           "description": "For all day events",
-          "type": "date-time"
+          "type": "string",
+          "format": "date-time"
         },
         "dateTime": {
           "description": "For non-all day events",
-          "type": "date-time"
+          "type": "string",
+          "format": "date-time"
         },
         "timeZone": {
-          "description": "Timezone for start",
-          "type": "timezone"
+          "description": "Timezone for start (formatted as an IANA Time Zone Database name)",
+          "type": "string"
         }
       }
     },

@@ -4,7 +4,7 @@
   "type": "object",
   "additonalProperties": false,
   "title": "IncidentNotification",
-  "description": "Incidents are a normalized, de-duplicated event. It can be thought of as a problem or an issue within your service that needs to be addressed and resolved.",
+  "description": "IncidentNotifications are a 'page' results from an incident being triggered or escalated.",
   "properties": {
     "type": {
       "type": "string",
@@ -27,7 +27,7 @@
       ]
     },
     "recipient": {
-      "description": "The recepient of the incident notification",
+      "description": "The recipient of the incident notification",
       "type": "string"
     },
     "kind": {

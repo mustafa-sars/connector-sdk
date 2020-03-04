@@ -44,6 +44,6 @@
        "format": "date-time"
      }
    },
-   "required": [ "_type", "id", "self" ]
+   "required": [ "_type", "id", "self", "name", "boardType" ]
  }
 }

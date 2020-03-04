@@ -4,7 +4,7 @@
   "type": "object",
   "additonalProperties": false,
   "title": "CommitCheck",
-  "description": "Actors are humans or non-humans that perform actions.",
+  "description": "A status rendered on a Commit e.g. from a CI/CD or code quality tool.",
   "properties": {
     "_type": {
       "type": "string",
@@ -20,12 +20,12 @@
       "format": "uri"
     },
     "avatarUrl": {
-      "description": "An avatar for this owner.",
+      "description": "An avatar for this CommitCheck.",
       "type": "string",
       "format": "uri"
     },
     "commitOid": {
-      "description": "The oid of the Commit associated with this CommitCheck, if present.",
+      "description": "The oid of the Commit associated with this CommitCheck.",
       "type": "string"
     },
     "context": {
@@ -34,10 +34,11 @@
     },
     "state": {
       "description": "The state of the CommitCheck",
-      "type": "string"
+      "type": "string",
+      "enum": ["passed", "failed"]
     },
     "description": {
-      "description": "The description of this commit check",
+      "description": "The description of this CommitCheck",
       "type": "integer"
     },
     "createdAt": {

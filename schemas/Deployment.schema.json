@@ -34,7 +34,7 @@
       ]
     },
     "commitOid": {
-      "description": "The oid of the Commit this Build ran on, if present.",
+      "description": "The oid of the Commit this Deployment ran on, if present.",
       "type": "string"
     },
     "branch": {
@@ -42,7 +42,7 @@
       "type": "string"
     },
     "version": {
-      "description": "TODO: string or int? The deployment version",
+      "description": "The Deployment version",
       "type": "string"
     },
     "packages": {
@@ -51,24 +51,24 @@
       "items": { "type": "string" }
     },
     "creator": {
-      "description": "The `self` URI of the Actor this test commit to, or a nested Actor record.",
+      "description": "The `self` URI of the Actor who created the Deployment, or a nested Actor record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/actor" },
         { "type": "string", "format": "uri" }
       ]
     },
     "htmlUrl": {
-      "description": "The URL to view this deployment.",
+      "description": "The URL to view this Deployment.",
       "type": "string",
       "format": "uri"
     },
     "statusUrl": {
-      "description": "The URL to view the status of this deployment.",
+      "description": "The URL to view the status of this Deployment.",
       "type": "string",
       "format": "uri"
     },
     "createdAt": {
-      "description": "The time this build was created.",
+      "description": "The time this Deployment was created.",
       "type": "string",
       "format": "date-time"
     }

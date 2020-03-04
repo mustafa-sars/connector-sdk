@@ -50,14 +50,6 @@
       "description": "Commit statistics.",
       "type": "object",
       "properties": {
-        "id": {
-          "description": "The id of the statistics.",
-          "type": "string"
-        },
-        "type": {
-          "description": "What type of statistic this is.",
-          "type": "string"
-        },
         "additions": {
           "description": "Lines of code added in this commit.",
           "type": "integer"
@@ -70,9 +62,8 @@
           "description": "Total lines of code in this commit.",
           "type": "integer"
         }
-      },
-      "required": [ "_type", "id", "type" ]
+      }
     }
   },
-  "required": [ "id", "self" ]
+  "required": [ "_type", "id", "self", "oid", "message" ]
 }

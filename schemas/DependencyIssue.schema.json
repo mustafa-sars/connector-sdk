@@ -45,8 +45,11 @@
       "format": "date-time"
     },
     "statusUpdatedBy": {
-      "description": "TODO: StatusUpdatedBy",
-      "type": "string"
+      "description": "The `self` URI of the Actor, or a nested Actor record.",
+      "oneOf": [
+        { "$ref": "https://platform.codeclimate.com/schemas/actor" },
+        { "type": "string", "format": "uri" }
+      ]
     },
     "rawDetails": {
       "description": "TODO",
