@@ -28,17 +28,17 @@
       "type": "string"
     },
     "createdAt": {
-      "description": "The time this component was created",
+      "description": "The time this component was created.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this component was updated",
+      "description": "The time this component was updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time this component was deleted",
+      "description": "The time this component was deleted.",
       "type": "string",
       "format": "date-time"
     }

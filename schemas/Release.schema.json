@@ -11,11 +11,11 @@
       "const": "Release"
     },
     "id": {
-      "description": "The unique ID of this Release",
+      "description": "The unique ID of this release.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
@@ -27,26 +27,26 @@
       ]
     },
     "releaseStage": {
-      "description": "The stage of the Release",
+      "description": "The stage of the release.",
       "type": "string"
     },
     "htmlUrl": {
-      "description": "The URL for a human to view this Release",
+      "description": "The URL for a human to view this release.",
       "type": "string",
       "format": "uri"
     },
     "createdAt": {
-      "description": "The time Release was created",
+      "description": "The time release was created.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time Release was updated",
+      "description": "The time release was updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time Release was deleted",
+      "description": "The time release was deleted.",
       "type": "string",
       "format": "date-time"
     }

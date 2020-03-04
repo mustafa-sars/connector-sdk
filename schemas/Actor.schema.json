@@ -29,7 +29,7 @@
     },
     "bot": {
       "type": "boolean",
-      "description": "indicates the actor is not a human"
+      "description": "Indicates the actor is not a human"
     },
     "htmlUrl": {
       "type": "string",

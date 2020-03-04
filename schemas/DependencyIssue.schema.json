@@ -11,7 +11,7 @@
       "const": "DependencyIssue"
     },
     "id": {
-      "description": "The unique ID of this Dependency Issue.",
+      "description": "The unique ID of this dependency issue.",
       "type": "string"
     },
     "self": {
@@ -20,61 +20,61 @@
       "format": "uri"
     },
     "title": {
-      "description": "The title of this Dependency Issue.",
+      "description": "The title of this dependency issue.",
       "type": "string"
     },
     "message": {
-      "description": "The Dependency Issue message.",
+      "description": "The message of this dependency issue.",
       "type": "string"
     },
     "fingerprint": {
-      "description": "TODO: Fingerprint",
+      "description": "The fingerprint of this dependency issue.",
       "type": "string"
     },
     "status": {
-      "description": "The status of the Dependency Issue",
-      "type": "string"
+      "description": "The status of this dependency issue.",
+      "enum": ["open", "closed"]
     },
     "statusDetails": {
-      "description": "The details of the Dependency Issue's status",
+      "description": "The details of this dependency issue's status.",
       "type": "string"
     },
     "statusUpdatedAt": {
-      "description": "The time the status was updated at",
+      "description": "The time the dependency issue was updated at.",
       "type": "string",
       "format": "date-time"
     },
     "statusUpdatedBy": {
-      "description": "The `self` URI of the Actor, or a nested Actor record.",
+      "description": "The `self` URI of the actor, or a nested actor record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/actor" },
         { "type": "string", "format": "uri" }
       ]
     },
     "rawDetails": {
-      "description": "TODO",
+      "description": "Details related to this dependency issue.",
       "type": "string"
     },
     "htmlUrl": {
-      "description": "A URL for this Dependency Issue.",
+      "description": "A URL for this dependency issue.",
       "type": "string",
       "format": "uri"
     },
     "createdAt": {
-      "description": "The time this component was created",
+      "description": "The time this component was created.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this component was updated",
+      "description": "The time this component was updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time this component was deleted",
+      "description": "The time this component was deleted.",
       "type": "string",
       "format": "date-time"
     }
   },
-  "required": [ "_type", "id", "self" ]
+  "required": [ "_type", "id", "self", "title" ]
 }

@@ -11,32 +11,32 @@
       "const": "Environment"
     },
     "id": {
-      "description": "The unique ID of this Environment.",
+      "description": "The unique ID of this environment",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record.",
+      "description": "The canonical URI for this record",
       "type": "string",
       "format": "uri"
     },
     "name": {
-      "description": "The name of the environment.",
+      "description": "The name of the environment",
       "type": "string"
     },
     "description": {
-      "description": "The description of the environment.",
+      "description": "The description of the environment",
       "type": "string"
     },
     "transient": {
-      "description": "Whether the environment is transient.",
+      "description": "Whether the environment is transient",
       "type": "boolean"
     },
     "production": {
-      "description": "Whether the environment is production.",
+      "description": "Whether the environment is production",
       "type": "boolean"
     },
     "htmlUrl": {
-      "description": "The URL to view this environment.",
+      "description": "The URL to view this environment",
       "type": "string",
       "format": "uri"
     },

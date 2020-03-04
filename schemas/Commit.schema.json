@@ -4,7 +4,7 @@
   "type": "object",
   "additonalProperties": false,
   "title": "Commit",
-  "description": "A commit.",
+  "description": "Adds latest changes to the source code.",
   "properties": {
     "_type": {
       "type": "string",
@@ -20,14 +20,14 @@
       "format": "uri"
     },
     "author": {
-      "description": "The `self` URI of the Author, or a nested Author record.",
+      "description": "The `self` URI of the author, or a nested author record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/actor" },
         { "type": "string", "format": "uri" }
       ]
     },
     "committer": {
-      "description": "The `self` URI of the Committer this test commit to, or a nested Committer record.",
+      "description": "The `self` URI of the committer this test commit to, or a nested committer record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/actor" },
         { "type": "string", "format": "uri" }
@@ -42,12 +42,12 @@
       "type": "string"
     },
     "parents": {
-      "description": "The canonical URI for this record.",
+      "description": "The commit parent.",
       "type": "array",
       "items": { "type": "string" }
     },
     "statistics": {
-      "description": "Commit statistics.",
+      "description": "commit statistics.",
       "type": "object",
       "properties": {
         "additions": {

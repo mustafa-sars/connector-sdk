@@ -4,50 +4,50 @@
   "type": "object",
   "additonalProperties": false,
   "title": "Issue",
-  "description": "TODO: description for issues.",
+  "description": "Issues related to a Project.",
   "properties": {
     "type": {
       "type": "string",
       "const": "Issue"
     },
     "id": {
-      "description": "The unique ID of this Issue",
+      "description": "The unique ID of this Issue.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
     "title": {
-      "description": "The human-readable title of this issue",
+      "description": "The human-readable title of this issue.",
       "type": "string"
     },
     "htmlUrl": {
-      "description": "The URL for a human to view this issue",
+      "description": "The URL for a human to view this issue.",
       "type": "string",
       "format": "uri"
     },
     "status": {
-      "description": "The status of this issue",
+      "description": "The status of this issue.",
       "enum": ["triggered", "acknowledged", "resolved"]
     },
     "description": {
-      "description": "The description issue",
+      "description": "The description issue.",
       "type": "string"
     },
     "dueOn": {
-      "description": "When the Issue is due",
+      "description": "The due date of the issue.",
       "type": "string",
       "format": "date-time"
     },
     "createdAt": {
-      "description": "The time this issue began",
+      "description": "The time this issue began.",
       "type": "string",
       "format": "date-time"
     },
     "resolvedAt": {
-      "description": "When the Issue was resolved",
+      "description": "When the Issue was resolved.",
       "type": "string",
       "format": "date-time"
     },

@@ -4,18 +4,18 @@
   "type": "object",
   "additonalProperties": false,
   "title": "IssuePriority",
-  "description": "A comment left on an Issue.",
+  "description": "A priority on an Issue.",
   "properties": {
     "type": {
       "type": "string",
       "const": "IssuePriority"
     },
     "id": {
-      "description": "The unique ID of this IssuePriority",
+      "description": "The unique ID of this issue priority.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
@@ -27,34 +27,34 @@
       ]
     },
     "iconUrl": {
-      "description": "The URL for a human to view an icon related to an IssuePriority",
+      "description": "The URL for a human to view an icon related to an issue priority.",
       "type": "string",
       "format": "uri"
     },
     "name": {
-      "description": "The name of the IssuePriority",
+      "description": "The name of the issue priority.",
       "type": "string"
     },
     "statusColor": {
-      "description": "The status color of the IssuePriority",
+      "description": "The status color of the issue priority.",
       "type": "string"
     },
     "description": {
-      "description": "The description of the IssuePriority",
+      "description": "The description of the issue priority.",
       "type": "string"
     },
     "createdAt": {
-      "description": "The time this IssuePriority began",
+      "description": "The time this issue priority began.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this IssuePriority was last updated.",
+      "description": "The time this issue priority was last updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time this IssuePriority was deleted.",
+      "description": "The time this issue priority was deleted.",
       "type": "string",
       "format": "date-time"
     }

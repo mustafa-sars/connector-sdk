@@ -11,25 +11,25 @@
       "const": "Calendar"
     },
     "id": {
-      "description": "The unique ID of this calendar",
+      "description": "The unique ID of this calendar.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
     "title": {
-      "description": "The title of this calendar",
+      "description": "The title of this calendar.",
       "type": "string"
     },
     "description": {
-      "description": "The description of this calendar",
+      "description": "The description of this calendar.",
       "type": "integer"
     },
     "timeZone": {
-      "description": "The timezone of this calendar",
-      "type": "timezone"
+      "description": "Timezone for calendar (formatted as an IANA Time Zone Database name).",
+      "type": "string"
     }
   },
   "required": [ "_type", "id", "self", "title" ]

@@ -4,65 +4,65 @@
   "type": "object",
   "additonalProperties": false,
   "title": "IssueChangelog",
-  "description": "Changes between Issues.",
+  "description": "Changes related to Issues.",
   "properties": {
     "type": {
       "type": "string",
       "const": "IssueChangelog"
     },
     "id": {
-      "description": "The unique ID of this IssueChangelog",
+      "description": "The unique ID of this issue changelog.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
     "title": {
-      "description": "The human-readable title of this IssueChangelog",
+      "description": "The human-readable title of this issue changelog.",
       "type": "string"
     },
     "htmlUrl": {
-      "description": "The URL for a human to view this IssueChangelog",
+      "description": "The URL for a human to view this issue changelog.",
       "type": "string",
       "format": "uri"
     },
     "status": {
-      "description": "The status of this IssueChangelog",
+      "description": "The status of this issue changelog.",
       "enum": ["triggered", "acknowledged", "resolved"]
     },
     "description": {
-      "description": "The description IssueChangelog",
+      "description": "The description issue changelog.",
       "type": "string"
     },
     "from": {
-      "description": "The from IssueChangelog",
+      "description": "The from issue state of an issue changelog.",
       "type": "string"
     },
     "to": {
-      "description": "The to IssueChangelog",
+      "description": "The to issue state of an issue changelog.",
       "type": "string"
     },
     "author": {
-      "description": "The `self` URI of the Author, or a nested Author record.",
+      "description": "The `self` URI of the author, or a nested author record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/actor" },
         { "type": "string", "format": "uri" }
       ]
     },
     "createdAt": {
-      "description": "The time this IssueChangelog began",
+      "description": "The time this issue changelog began.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this IssueChangelog was last updated.",
+      "description": "The time this issue changelog was last updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time this IssueChangelog was deleted.",
+      "description": "The time this issue changelog was deleted.",
       "type": "string",
       "format": "date-time"
     }

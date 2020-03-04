@@ -4,14 +4,14 @@
   "type": "object",
   "additonalProperties": false,
   "title": "PullRequestComment",
-  "description": "A Pull Request Event is an event that's related to a Pull Request.",
+  "description": "A Pull Request Comment is a review comment that's related to a Pull Request.",
   "properties": {
     "_type": {
       "type": "string",
       "const": "PullRequestComment"
     },
     "id": {
-      "description": "The unique ID of this PullRequestComment",
+      "description": "The unique ID of this pull request comment",
       "type": "string"
     },
     "self": {
@@ -27,67 +27,67 @@
       ]
     },
     "pullRequestReview": {
-      "description": "The `self` URI of the PullRequestReview, or a nested PullRequestReview record.",
+      "description": "The `self` URI of the review, or a nested review record.",
       "oneOf": [
-        { "$ref": "https://platform.codeclimate.com/schemas/pull-request-review" },
+        { "$ref": "https://platform.codeclimate.com/schemas/review" },
         { "type": "string", "format": "uri" }
       ]
     },
     "author": {
-      "description": "The `self` URI of the Actor, or a nested Actor record.",
+      "description": "The `self` URI of the author, or a nested author record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/actor" },
         { "type": "string", "format": "uri" }
       ]
     },
     "body": {
-      "description": "The body of this PullRequestComment",
+      "description": "The body of this pull request comment",
       "type": "string"
     },
     "bodyHtml": {
-      "description": "The html of this PullRequestComment",
+      "description": "The body html of this pull request comment",
       "type": "string"
     },
     "bodyText": {
-      "descrtiption": "The text of this PullRequestComment",
-      "type": "string"
+      "descrtiption": "The body text of this pull request comment",
+      "type": ["string", "null"]
     },
     "state": {
-      "description": "The type of PullRequestComment",
+      "description": "The state of a pull request comment",
       "type": "string"
     },
     "path": {
-      "description": "The path of this PullRequestComment",
+      "description": "The path of this pull request comment",
       "type": "string"
     },
     "position": {
-      "description": "The position of this PullRequestComment",
+      "description": "The position of this pull request comment",
       "type": "integer"
     },
     "outdated": {
-      "description": "Whether the PullRequestComment is outdated",
+      "description": "Whether the pull request comment is outdated",
       "type": "boolean"
     },
     "publishedAt": {
-      "description": "The time PullRequestComment was published",
+      "description": "The time pull request comment was published",
       "type": "string",
       "format": "date-time"
     },
     "draftedAt": {
-      "description": "The time PullRequestComment was drafted",
+      "description": "The time pull request comment was drafted",
       "type": "string",
       "format": "date-time"
     },
     "createdAt": {
-      "description": "The time PullRequestComment was created",
+      "description": "The time pull request comment was created",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time PullRequestComment was updated",
+      "description": "The time pull request comment was updated",
       "type": "string",
       "format": "date-time"
     }
   },
-  "required": [ "_type", "id", "self" ]
+  "required": [ "_type", "id", "self", "pullRequest", "author" ]
 }

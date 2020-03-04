@@ -11,7 +11,7 @@
       "const": "Project"
     },
     "id": {
-      "description": "The unique ID of this Project",
+      "description": "The unique ID of this project.",
       "type": "string"
     },
     "self": {
@@ -20,25 +20,25 @@
       "format": "uri"
     },
     "name": {
-      "description": "The name of the Project",
+      "description": "The name of the project.",
       "type": "string"
     },
     "description": {
-      "description": "The description of the Project",
+      "description": "The description of the project.",
       "type": "string"
     },
     "createdAt": {
-      "description": "The time this Project began",
+      "description": "The time this project began.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this Project was last updated.",
+      "description": "The time this project was last updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time this Project was deleted.",
+      "description": "The time this project was deleted.",
       "type": "string",
       "format": "date-time"
     }

@@ -11,42 +11,42 @@
       "const": "Metric"
     },
     "id": {
-      "description": "The unique ID of this Metric",
+      "description": "The unique ID of this metric.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
     "record": {
-      "description": "The record of the Metric",
+      "description": "The record of the metric.",
       "type": "string"
     },
     "key": {
-      "description": "The key of the Metric",
+      "description": "The key of the metric.",
       "type": "string"
     },
     "name": {
-      "description": "The name of the Metric",
+      "description": "The name of the metric.",
       "type": "string"
     },
     "unit": {
-      "description": "The unit of the Metric",
+      "description": "The unit of how the metric is measured.",
       "type": "string"
     },
     "createdAt": {
-      "description": "The time the Metric was created",
+      "description": "The time the metric was created.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time the Metric was updated",
+      "description": "The time the metric was updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time the Metric was deleted",
+      "description": "The time the metric was deleted.",
       "type": "string",
       "format": "date-time"
     }

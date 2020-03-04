@@ -11,7 +11,7 @@
       "const": "ReleaseStage"
     },
     "id": {
-      "description": "The unique ID of this ReleaseStage",
+      "description": "The unique ID of this release stage",
       "type": "string"
     },
     "self": {
@@ -20,31 +20,31 @@
       "format": "uri"
     },
     "packageRepository": {
-      "description": "TODO: Is this a link to a package repo?",
+      "description": "Link to the package repository",
       "type": "string",
       "format": "uri"
     },
     "channel": {
-      "description": "The channel of the ReleaseStage",
+      "description": "The channel of the release stage",
       "type": "string"
     },
     "htmlUrl": {
-      "description": "The URL for a human to view this ReleaseStage",
+      "description": "The URL for a human to view this release stage",
       "type": "string",
       "format": "uri"
     },
     "createdAt": {
-      "description": "The time ReleaseStage was created",
+      "description": "The time the release stage was created",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time ReleaseStage was updated",
+      "description": "The time the release stage was updated",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time ReleaseStage was deleted",
+      "description": "The time the release stage was deleted",
       "type": "string",
       "format": "date-time"
     }

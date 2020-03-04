@@ -11,25 +11,25 @@
       "const": "Incident"
     },
     "id": {
-      "description": "The unique ID of this incident from the incident response platform",
+      "description": "The unique ID of this incident from the incident response platform.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
     "title": {
-      "description": "The human-readable title of this incident",
+      "description": "The human-readable title of this incident.",
       "type": "string"
     },
     "htmlUrl": {
-      "description": "The URL for a human to view this incident",
+      "description": "The URL for a human to view this incident.",
       "type": "string",
       "format": "uri"
     },
     "number": {
-      "description": "The number identifying this incident",
+      "description": "The number identifying this incident.",
       "type": "integer"
     },
     "status": {

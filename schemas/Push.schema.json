@@ -4,14 +4,14 @@
   "type": "object",
   "additonalProperties": false,
   "title": "Push",
-  "description": "An instance of pushing code to a vcs.",
+  "description": "An instance of pushing code to a version control system.",
   "properties": {
     "type": {
       "type": "string",
       "const": "Push"
     },
     "id": {
-      "description": "The unique ID of this Push",
+      "description": "The unique ID of this push",
       "type": "string"
     },
     "self": {
@@ -20,37 +20,37 @@
       "format": "uri"
     },
     "repository": {
-      "description": "The `self` URI of the Repository, or a nested Repository record.",
+      "description": "The `self` URI of the repository, or a nested repository record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/repository" },
         { "type": "string", "format": "uri" }
       ]
     },
     "branchName": {
-      "description": "The branch name associated with the Push",
+      "description": "The branch name associated with the push",
       "type": "string"
     },
     "commitOid": {
-      "description": "The oid of the Commit this Push is associated with.",
+      "description": "The oid of the Commit this push is associated with.",
       "type": "string"
     },
     "previousCommitOid": {
-      "description": "The oid of the previous Commit this Push is associated with.",
+      "description": "The oid of the previous Commit this push is associated with.",
       "type": "string"
     },
     "createdAt": {
-      "description": "The time this Push began",
+      "description": "The time this push began",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this Push was last updated.",
+      "description": "The time this push was last updated.",
       "type": "string",
       "format": "date-time"
     }
   },
   "required": [
-    "_type", "id", "self", "createdAt", "updatedAt", "repository"
+    "_type", "id", "self", "createdAt", "repository", "commitOid"
   ]
 }
 

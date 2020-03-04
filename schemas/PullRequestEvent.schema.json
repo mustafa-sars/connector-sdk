@@ -11,11 +11,11 @@
       "const": "PullRequestEvent"
     },
     "id": {
-      "description": "The unique ID of this PullRequestEvent",
+      "description": "The unique ID of this pull request event.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
@@ -27,20 +27,20 @@
       ]
     },
     "eventType": {
-      "description": "The type of PullRequestEvent",
+      "description": "The type of pull request event.",
       "type": "string",
       "enum": ["Commit", "ReviewRequestedEvent", "IssueComment", "PullRequestReview", "MergedEvent", "HeadRefForcePushedEvent", "AssignedEvent", "LabeledEvent", "ClosedEvent", "ReopenedEvent"]
     },
     "createdAt": {
-      "description": "The time PullRequestEvent was created",
+      "description": "The time the pull request event was created.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time PullRequestEvent was updated",
+      "description": "The time the pull request event was updated.",
       "type": "string",
       "format": "date-time"
     }
   },
-  "required": [ "_type", "id", "self" ]
+  "required": [ "_type", "id", "self", "eventType", "pullRequest" ]
 }

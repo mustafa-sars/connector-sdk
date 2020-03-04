@@ -11,7 +11,7 @@
       "const": "FeatureFlag"
     },
     "id": {
-      "description": "The unique ID of this FeatureFlag.",
+      "description": "The unique ID of this feature flag.",
       "type": "string"
     },
     "self": {
@@ -20,23 +20,23 @@
       "format": "uri"
     },
     "name": {
-      "description": "The name of the FeatureFlag.",
+      "description": "The name of the feature flag.",
       "type": "string"
     },
     "kind": {
-      "description": "The kind of FeatureFlag.",
+      "description": "The kind of feature flag.",
       "type": "string"
     },
     "key": {
-      "description": "The FeatureFlag key.",
+      "description": "The feature flag key.",
       "type": "string"
     },
     "temporary": {
-      "description": "Whether the FeatureFlag is temporary.",
+      "description": "Whether the feature flag is temporary.",
       "type": "boolean"
     },
     "maintainer": {
-      "description": "The `self` URI of the Actor this test commit to, or a nested Actor record.",
+      "description": "The `self` URI of the maintainer this test commit to, or a nested maintainer record.",
       "oneOf": [
         { "$ref": "https://platform.codeclimate.com/schemas/actor" },
         { "type": "string", "format": "uri" }
@@ -48,20 +48,20 @@
       "format": "uri"
     },
     "createdAt": {
-      "description": "The time this FeatureFlag was created",
+      "description": "The time this feature flag was created",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this FeatureFlag was updated",
+      "description": "The time this feature flag was updated",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time this FeatureFlag was deleted",
+      "description": "The time this feature flag was deleted",
       "type": "string",
       "format": "date-time"
     }
   },
-  "required": [ "_type", "id", "self" ]
+  "required": [ "_type", "id", "self", "name" ]
 }

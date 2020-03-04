@@ -11,11 +11,11 @@
       "const": "IncidentNotification"
     },
     "id": {
-      "description": "The unique ID of this incidentNotification from the incident response platform",
+      "description": "The unique ID of this incidentNotification from the incident response platform.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
@@ -27,7 +27,7 @@
       ]
     },
     "recipient": {
-      "description": "The recipient of the incident notification",
+      "description": "The recipient of the incident notification.",
       "type": "string"
     },
     "kind": {

@@ -11,34 +11,34 @@
       "const": "Application"
     },
     "id": {
-      "description": "The unique ID of this application",
+      "description": "The unique ID of this application.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
     "name": {
-      "description": "The name of the application",
+      "description": "The name of the application.",
       "type": "string"
     },
     "description": {
-      "description": "The description of the application",
+      "description": "The description of the application.",
       "type": "string"
     },
     "createdAt": {
-      "description": "The time the application was created",
+      "description": "The time the application was created.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this application was updated",
+      "description": "The time this application was updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time this application was deleted",
+      "description": "The time this application was deleted.",
       "type": "string",
       "format": "date-time"
     }

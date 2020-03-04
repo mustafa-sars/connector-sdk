@@ -11,21 +11,21 @@
       "const": "IssueComment"
     },
     "id": {
-      "description": "The unique ID of this IssueComment",
+      "description": "The unique ID of this issue comment.",
       "type": "string"
     },
     "self": {
-      "description": "The canonical URI for this record",
+      "description": "The canonical URI for this record.",
       "type": "string",
       "format": "uri"
     },
     "htmlUrl": {
-      "description": "The URL for a human to view this IssueComment",
+      "description": "The URL for a human to view this issue comment.",
       "type": "string",
       "format": "uri"
     },
     "body": {
-      "description": "The body of the IssueComment",
+      "description": "The body of the issue comment.",
       "type": "string"
     },
     "author": {
@@ -36,17 +36,17 @@
       ]
     },
     "createdAt": {
-      "description": "The time this IssueComment began",
+      "description": "The time this issue comment began.",
       "type": "string",
       "format": "date-time"
     },
     "updatedAt": {
-      "description": "The time this IssueComment was last updated.",
+      "description": "The time this issue comment was last updated.",
       "type": "string",
       "format": "date-time"
     },
     "deletedAt": {
-      "description": "The time this IssueComment was deleted.",
+      "description": "The time this issue comment was deleted.",
       "type": "string",
       "format": "date-time"
     }
